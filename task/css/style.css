@@ -220,13 +220,13 @@ header {
     height: 100%;
     display: block; }
   .header-social.item-1 {
-    background-image: url("img/vk.png"); }
+    background-image: url("../img/vk.png"); }
   .header-social.item-2 {
-    background-image: url("img/facebook-header.png"); }
+    background-image: url("../img/facebook-header.png"); }
   .header-social.item-3 {
-    background-image: url("img/you-tube-header.png"); }
+    background-image: url("../img/you-tube-header.png"); }
   .header-social.item-4 {
-    background-image: url("img/google-plus-header.png"); }
+    background-image: url("../img/google-plus-header.png"); }
 
 .slider {
   margin-top: 80px; }
