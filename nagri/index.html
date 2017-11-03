@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
   </head>
   <body> 
-    <header class="header">
+    <header class="header"><div id="myCounter"></div>
       <div class="header__top-line">
         <div class="container">
           <div class="row">
@@ -59,19 +59,19 @@
             <div class="col-md-12">
               <div class="time">
                 <div class="time__item">
-                  <div class="time__count">29</div>
+                  <div class="time__count days">29</div>
                   <div class="time__name">days</div>
                 </div>
                 <div class="time__item">
-                  <div class="time__count">29</div>
+                  <div class="time__count hours">29</div>
                   <div class="time__name">hours</div>
                 </div>
                 <div class="time__item">
-                  <div class="time__count">29</div>
+                  <div class="time__count minutes">29</div>
                   <div class="time__name">minutes</div>
                 </div>
                 <div class="time__item">
-                  <div class="time__count">29</div>
+                  <div class="time__count seconds">29</div>
                   <div class="time__name">seconds</div>
                 </div>
               </div>
@@ -94,7 +94,7 @@
     <section class="partners-t">
       <div class="container">
         <div class="row">
-          <div class="col-md-12"><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="pners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a></div>
+          <div class="col-md-12"><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a></div>
         </div>
       </div>
     </section>
@@ -672,29 +672,27 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-wrap">
-              <div class="footer-contacts">
-                <h2 class="footer-contacts__title">contacts</h2>
-                <div class="footer__phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="footer__link" href="tel:+380967965611"> 380 96 79 65 611</a></div>
-                <div class="footer__email"><i class="fa fa-envelope" aria-hidden="true"></i><a class="footer__link" href="mailto:nagritech@info.com"> nagritech@info.com</a></div>
-                <div class="footer__adress"><i class="fa fa-map-marker" aria-hidden="true"></i>	<span> New York,Hope st. 96/24</span></div>
-                <div class="footer__social"><a class="in-f-icon footer__icon" href=""></a><a class="f-f-icon footer__icon" href=""></a><a class="g-f-icon footer__icon" href=""></a><a class="t-f-icon footer__icon" href=""></a></div>
+      <div class="footer-wrap">
+        <div class="footer-contacts">
+          <div class="footer-contacts-container">
+            <h2 class="footer-contacts__title">contacts</h2>
+            <div class="footer__phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="footer__link" href="tel:+380967965611"> 380 96 79 65 611</a></div>
+            <div class="footer__email"><i class="fa fa-envelope" aria-hidden="true"></i><a class="footer__link" href="mailto:nagritech@info.com"> nagritech@info.com</a></div>
+            <div class="footer__adress"><i class="fa fa-map-marker" aria-hidden="true"></i>	<span> New York,Hope st. 96/24</span></div>
+            <div class="footer__social"><a class="in-f-icon footer__icon" href=""></a><a class="f-f-icon footer__icon" href=""></a><a class="g-f-icon footer__icon" href=""></a><a class="t-f-icon footer__icon" href=""></a></div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-wrap">
+            <h2 class="contact-form__title">GET In touch</h2>
+            <form action="" method="post">
+              <div class="fields">
+                <input class="contact-form__input" type="text" placeholder="Name">
+                <input class="contact-form__input" type="Email" placeholder="Email">
+                <textarea class="contact-form__textarea" name="" rows="10" placeholder="Messedge"></textarea>
               </div>
-              <div class="contact-form">
-                <h2 class="contact-form__title">GET In touch</h2>
-                <form action="" method="post">
-                  <div class="fields">
-                    <input class="contact-form__input" type="text" placeholder="Name">
-                    <input class="contact-form__input" type="Email" placeholder="Email">
-                    <textarea class="contact-form__textarea" name="" rows="10" placeholder="Messedge"></textarea>
-                  </div>
-                  <input class="footer__btn" type="submit" value="send">
-                </form>
-              </div>
-            </div>
+              <input class="footer__btn" type="submit" value="send">
+            </form>
           </div>
         </div>
       </div>

@@ -6,30 +6,30 @@ $(function(){
 	});
 
 
-$(".hamburger").click(function(){
-	$(this).toggleClass("is-active");
-	$('.nav').slideToggle("slow", function(){
+	$(".hamburger").click(function(){
+		$(this).toggleClass("is-active");
+		$('.nav').slideToggle("slow", function(){
+		});
 	});
-});
 
 
-$( "#slider-range-min" ).slider({
-	range: "min",
-	value: 35000,
-	min: 0,
-	max: 70000,
-	slide: function( event, ui ) {
-		$( "#amount" ).val( "" + ui.value );
-	}
-});
+	$( "#slider-range-min" ).slider({
+		range: "min",
+		value: 35000,
+		min: 0,
+		max: 70000,
+		slide: function( event, ui ) {
+			$( "#amount" ).val( "" + ui.value );
+		}
+	});
 
 
-$( "#amount" ).val( "" + $( "#slider-range-min" ).slider( "value" ) );
-$( "#slider-range-min" ).slider('disable');
+	$( "#amount" ).val( "" + $( "#slider-range-min" ).slider( "value" ) );
+	$( "#slider-range-min" ).slider('disable');
 
 
 
-var chart = new CanvasJS.Chart("chartContainer", {
+	var chart = new CanvasJS.Chart("chartContainer", {
 	//exportEnabled: true,
 	//animationEnabled: true,
 	maxWidth: 400,
@@ -53,5 +53,5 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		]
 	}]
 });
-chart.render();
+	chart.render();
 });
