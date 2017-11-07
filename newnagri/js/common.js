@@ -45,10 +45,11 @@ $(function(){
 		showInLegend: true,
 		toolTipContent: "{name}: <strong>{y}%</strong>",
 		dataPoints: [
-		{ y: 45, name: 	"Availeble", color:'#4C4C4C'  },
-		{ y: 25, name: 	"Availeble", color:'#CDCDCD'  },
-		{ y: 15, name: 	"Availeble", color:'#919191'},
-		{ y: 15, name: 	"Availeble", color:'#616161'},
+	{ y: 45, name: 	"Availeble", color:'#00CCCB'  },
+		{ y: 25, name: 	"Availeble", color:'#0E8D3E'  },
+		{ y: 15, name: 	"Availeble", color:'#05753A'},
+		{ y: 15, name: 	"Availeble", color:'#069488'},
+
 
 		]
 	}]
