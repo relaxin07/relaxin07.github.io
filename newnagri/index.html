@@ -1,746 +1,791 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nagri</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-  </head>
-  <body> 
-    <header class="header"><div id="myCounter"></div>
-      <div class="header__top-line">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="contacts">
-                <div class="contacts__item email"><a class="email__item" href="#">nagri@tech.info.com</a></div>
-                <div class="contacts__item phone"><a class="phone__item" href="tel:+74012304541">+ 380 99 75 62 630</a><a class="phone__item" href="tel:+380887562630">+ 380 99 75 62 630</a></div>
-                <div class="contacts__item social"><a class="social__item in-icon" href="#"></a><a class="social__item facebook-icon" href="#"></a><a class="social__item google-plus-icon" href="#"></a><a class="social__item twitter-icon" href="#"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nagri</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/featherlight.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body> 
+
+<div class="top-form" id="top-form-2">
+    <form action="method">
+      <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Register</h2></div>
+      <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
+      <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
+      <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
+      <div class="top-form__input-container">
+        <input type="checkbox" id="accept_terms" required="required">
+        <label for="accept_terms">I read <a target="_blank" style="color: #1172DF" href="#">terms of investment</a> and agree</label>
       </div>
-      <div class="header__main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="logo"><img class="logo__img" src="img/header--logo.png" alt="logo"></div>
-            </div>
-            <div class="col-md-9">
-              <div class="header__main-right">
-                <div class="b-hamburger">
-                  <div class="hamburger hamburger--squeeze" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="name-menu-hamburger"></span></div>
-                </div>
-                <nav class="nav"><a class="nav__item" href="">Pre-sale</a><a class="nav__item" href="">Product</a><a class="nav__item" href="">Token</a><a class="nav__item" href="">Roadmap</a><a class="nav__item" href="">White Paper</a><a class="nav__item" href="">Our team</a><a class="nav__item" href="">FAQ</a><a class="nav__item" href="">Contacts</a>
-                </nav>
-                <div class="language">
-                  <select class="language__item language__item--text-uppercase"> 
-                    <option class="language__choise">en</option>
-                    <option class="language__choise">ru</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="top-form__input-container">
+        <input type="checkbox" id="top-form-checked" required="required">
+        <label for="top-form-checked">I'm not a US, Singapore citizen</label>
       </div>
-      <div class="header__bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="title">
-                <h1 class="title__main wow">Join The NGR Token Pre-Sale!</h1>
-                <div class="title__main-sub title__main-sub--text-uppercase wow">Before the start of the pre-ICO:</div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="time">
-                <div class="time__item wow" data-wow-delay=".2s">
-                  <div class="time__count days" id="days">0</div>
-                  <div class="time__name">days</div>
-                </div>
-                <div class="time__item wow" data-wow-delay=".4s">
-                  <div class="time__count hours" id="hours">0</div>
-                  <div class="time__name">hours</div>
-                </div>
-                <div class="time__item wow" data-wow-delay=".6s">
-                  <div class="time__count minutes" id="minutes">0</div>
-                  <div class="time__name">minutes</div>
-                </div>
-                <div class="time__item wow" data-wow-delay=".8s">
-                  <div class="time__count seconds" id="seconds">0</div>
-                  <div class="time__name">seconds</div>
-                </div>
-              </div>
-              <div class="header-button wow"><a class="btn btn--yellow btn--text-uppercase" href="#">Take part in pre-ICO</a></div>
-              <div class="slider">
-                <p class="slider__count">
-                  <label for="amount">ETH</label>
-                  <input type="text" id="amount" readonly style="border:0; color:#fff; font-weight:bold;">
-                </p>
-                <div class="slider__line"><span class="slider__start-count">ETH 0</span>
-                  <div id="slider-range-min"></div><span class="slider__end-count">eth 70 00</span>
-                </div>
-                <div class="slider__info">1 NGR TOKEN = 0,005 ETH <br>Current Bonus: 50</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="partners-t wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12"><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="food wow">
-      <div class="foodstuffs">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="title title--centerer wow slideInLeft">
-                <div class="title__header">Deficiency<br><span class="title__header--green">Foodstuffs</span></div>
-              </div>
-            </div>
-            </div>
-          <div class="row">
-            <div class="col-md-5">
-              <div class="foodstuffs-img wow flipInX">
-                <div class="foodstuffs-img__item icon">
-                  <div class="foodstuffs-icon"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="foodstuffs__article article">
-                <div class="article__title">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
-                <div class="article__text">
-                  <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  <p class="article__paragraph">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="yields">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="title title--centerer wow slideInLeft">
-                <div class="title__header">Raising<br><span class="title__header--green">Yields</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <div class="yields-img">
-                <div class="yields-img__item icon">
-                  <div class="yields-icon"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="foodstuffs__article article">
-                <div class="article__title">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
-                <div class="article__text">
-                  <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                  <p class="article__paragraph">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget		</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="advantages wow">
+    <button class="top-form-btn" type="submit">Sign Up</button>
+    </form>
+    <hr class="top-form-hr">
+    <div class="top-form-sub-content">I am already registered. Go to <a  class="fl" href="#top-form-1" style="text-align: center;color:blue;">Sign In form</a> </div>
+  </div>
+
+
+
+
+  <!--<div class="top-form" id="top-form-1">
+    <form action="method">
+      <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Register</h2></div>
+      <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
+      <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
+      <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
+     <button class="top-form-btn" type="submit">Sign Up</button>
+    </form>
+    <hr class="top-form-hr">
+    <div class="top-form-sub-content">I am already registered. Go to <a href="#top-form-2" class="fl"  style="text-align: center;color:blue;">Sign In form</a> </div>
+  </div>-->
+
+
+ 
+ 
+
+
+  <header class="header" ><div id="myCounter"></div>
+    <div class="header__top-line">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">Main advantages</h2>
-              <div class="title__sub-text">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="advantages__item">
-              <div class="icon"> 
-                <div class="icon__item hazardous-icon"></div>
-              </div>
-              <div class="advantages__name">Non-hazardous</div>
-              <div class="advantages__discription">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="advantages__item">
-              <div class="icon"> 
-                <div class="icon__item use-icon"></div>
-              </div>
-              <div class="advantages__name">Easy to Use</div>
-              <div class="advantages__discription advantages__discription--padding">NAgritech products require virtually no additional equipment or any major modifications to traditional agricultural methods.</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="advantages__item">
-              <div class="icon"> 
-                <div class="icon__item effect-icon"></div>
-              </div>
-              <div class="advantages__name">Amazing Effects</div>
-              <div class="advantages__discription">AgriTech products have shown to increase crop yields in field tests as compared to control groups. Stronger roots, more resiliency, greater nutrients, and more...</div>
-            </div>
-          </div>
-          <div class="col-md-12"> 
-            <div class="advantages-button"><a class="btn btn--yellow btn--text-uppercase" href="#">Our Business Plan</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="subscribe wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">Subscribe <span class="title__header--green">to news</span></h2>
-              <div class="form-container">
-                <form action="" method="post">
-                  <div class="subscribe__field">
-                    <input class="subscribe__input" type="email" placeholder="Email">
-                  </div>
-                  <button class="btn btn--text-uppercase" type="submit">subsribe</button>
-                </form>
-              </div>
+            <div class="contacts">
+              <div class="contacts__item email"><a class="email__item" href="#">nagri@tech.info.com</a></div>
+              <div class="contacts__item phone"><a class="phone__item" href="tel:+74012304541">+ 380 99 75 62 630</a><a class="phone__item" href="tel:+380887562630">+ 380 99 75 62 630</a></div>
+              <div class="contacts__item social"><a class="social__item in-icon" href="#"></a><a class="social__item facebook-icon" href="#"></a><a class="social__item google-plus-icon" href="#"></a><a class="social__item twitter-icon" href="#"></a></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="token wow">
+    </div>
+    <div class="header__main">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
-            <div class="title title--centerer wow slideInLeft">
-              <div class="title__header">token<br><span class="title__header--green">sale terms</span></div>
-            </div>
-          </div>
-        </div>
-       <div class="row">
-          <div class="col-md-5">
-            <div id="chartContainer"></div>
-          </div>
-          <div class="col-md-7">
-            <div class="token__title">The total token supply fixed at<br><span class="token__title--green">1 Billion </span>(1,000,000,000) NGR, of which:</div>
-            <div class="token-container">
-              <div class="token__informantion">
-                <div class="token__name">400M</div>
-                <div class="token__discr">to be available in tokensale.</div>
-              </div>
-              <div class="token__informantion">
-                <div class="token__name">150M</div>
-                <div class="token__discr">are reserved for ICO bonuses.</div>
-              </div>
-              <div class="token__informantion">
-                <div class="token__name">300M</div>
-                <div class="token__discr">retained by NagriTech.</div>
-              </div>
-              <div class="token__informantion">
-                <div class="token__name">Ethereum ERC20</div>
-                <div class="token__discr">token.</div>
-              </div>
-              <div class="token__informantion">
-                <div class="token__name">150M</div>
-                <div class="token__discr">are reserved for early adopters in PRESALE. Public Crowdsale begins September 19th, 2017.</div>
-              </div>
-              <div class="token__informantion">
-                <div class="token__name">BTC and ETH</div>
-                <div class="token__discr token__discr--last">Purchase methods accepted: <br>1 ETH or 0.076 BTC = 10,000 NGR</div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="using wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="title wow slideInLeft">
-              <div class=" title__header title--centerer">using<br><span class="title__header--green">tokens</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="usign__item img"><img class="using__img" src="img/using-tokens-img.png" alt=""></div>
-          </div>
-          <div class="col-md-6">
-            <div class="using__item">
-              <div class="using__title">to spend tokens</div>
-              <div class="using-container">
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-              </div>
-              <div class="using__title">Earn token</div>
-              <div class="using-container">
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-                <div class="using__information">
-                  <div class="icon">
-                    <div class="molot-icon"></div>
-                  </div>
-                  <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="roadmap wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">our<br><span class="title__header--green">roadmap</span></h2>
-            </div>
-            <div class="roadmap-img"><img class="roadmap__img" src="img/roadmap-img.png"></div>
-            <div class="roadmap-content">
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2016</div>
-                <div class="roadmap-content__title">starting up</div>
-                <div class="roadmap-content__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia.</div>
-              </div>
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2017 q1</div>
-                <div class="roadmap-content__title">BUIDING UP AND GETTING REAL EXPERIENCES</div>
-                <div class="roadmap-content__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate. savia.</div>
-              </div>
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2017 q2</div>
-                <div class="roadmap-content__title">OPENING NEW BUSINESS</div>
-                <div class="roadmap-content__text"> Cum sociis natoque penatibus et mag montes.</div>
-              </div>
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2017 q3</div>
-                <div class="roadmap-content__title">ICO AND IPO</div>
-                <div class="roadmap-content__text"> Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget</div>
-              </div>
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2017 q4</div>
-                <div class="roadmap-content__title">SOME HEADER</div>
-                <div class="roadmap-content__text"> Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-              </div>
-              <div class="roadmap-content__item">
-                <div class="roadmap-content__data">2018 Q1</div>
-                <div class="roadmap-content__title">GLOBALIZING PRODUCT</div>
-                <div class="roadmap-content__text"> Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="code wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">Smart contract for GitHub</h2>
-              <div class="title__sub-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</div>
-            </div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="code-container">
-              <pre><code class="code__item"> 1. var $red = test; alert(1+1);1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);
-1. var $red = test; alert(1+1);</code></pre>
-            </div>
-          </div>
-          <div class="col-md-12"> 
-            <div class="code-button"><a class="btn btn--yellow btn--text-uppercase" href="#">Our code on github</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="documentation wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <div class="title__header">main<br><span class="title__header--green">documentation</span></div>
-            </div>
-          </div>
           <div class="col-md-3">
-            <div class="documentation__item">
-              <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
-              <div class="documentation__title">Smart contract for GitHub</div>
-              <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
+            <div class="logo"><img class="logo__img" src="img/header--logo.png" alt="logo"></div>
           </div>
-          <div class="col-md-3">
-            <div class="documentation__item">
-              <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
-              <div class="documentation__title">Smart contract for GitHub</div>
-              <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="documentation__item">
-              <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
-              <div class="documentation__title">Smart contract for GitHub</div>
-              <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="documentation__item">
-              <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
-              <div class="documentation__title">Smart contract for GitHub</div>
-              <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+          <div class="col-md-9">
+            <div class="header__main-right">
+              <div class="b-hamburger">
+                <div class="hamburger hamburger--squeeze" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="name-menu-hamburger"></span></div>
+              </div>
+              <nav class="nav">
+                <a class="nav__item" href="#pre-sale">Pre-sale</a><a class="nav__item" href="#product">Product</a><a class="nav__item" href="#token">Token</a><a class="nav__item" href="#roadmap">Roadmap</a><a class="nav__item" href="#white-paper">White Paper</a><a class="nav__item" href="#our-team">Our team</a><a class="nav__item" href="#faq">FAQ</a><a class="nav__item" href="#contacts">Contacts</a>
+              </nav>
+              <div class="language">
+                <select class="language__item language__item--text-uppercase"> 
+                  <option class="language__choise">en</option>
+                  <option class="language__choise">ru</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="team wow">
+    </div>
+    <div class="header__bottom " id="pre-sale">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="title">
-              <div class="title__header">our<br><span class="title__header--green">team</span></div>
+              <h1 class="title__main wow">Join The NGR Token Pre-Sale!</h1>
+              <div class="title__main-sub title__main-sub--text-uppercase wow">Before the start of the pre-ICO:</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="time">
+              <div class="time__item wow" data-wow-delay=".2s">
+                <div class="time__count days" id="days">0</div>
+                <div class="time__name">days</div>
+              </div>
+              <div class="time__item wow" data-wow-delay=".4s">
+                <div class="time__count hours" id="hours">0</div>
+                <div class="time__name">hours</div>
+              </div>
+              <div class="time__item wow" data-wow-delay=".6s">
+                <div class="time__count minutes" id="minutes">0</div>
+                <div class="time__name">minutes</div>
+              </div>
+              <div class="time__item wow" data-wow-delay=".8s">
+                <div class="time__count seconds" id="seconds">0</div>
+                <div class="time__name">seconds</div>
+              </div>
+            </div>
+            <div class="header-button wow"><a class="btn btn--yellow btn--text-uppercase fl" href="#top-form-2">Take part in pre-ICO</a></div>
+            <div class="slider">
+              <p class="slider__count">
+                <label for="amount">ETH</label>
+                <input type="text" id="amount" readonly style="border:0; color:#fff; font-weight:bold;">
+              </p>
+              <div class="slider__line"><span class="slider__start-count">ETH 0</span>
+                <div id="slider-range-min"></div><span class="slider__end-count">eth 70 00</span>
+              </div>
+              <div class="slider__info">1 NGR TOKEN = 0,005 ETH <br>Current Bonus: 50</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="people">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2  col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2  col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2  col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2  col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2  col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+  </header>
+  <section class="partners-t wow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img.png"></a><a class="partners-t__link" href="#"><img class="partners-t__img" src="img/partners-img-2.png"></a></div>
       </div>
-    </section>
-    <section class="advisor wow">
+    </div>
+  </section>
+  <section class="food  wow">
+    <div class="foodstuffs">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <div class="title__header">Supervisory<br><span class="title__header--green">advisors</span></div>
+          <div class="col-md-5">
+            <div class="title title--centerer wow slideInLeft">
+              <div class="title__header">Deficiency<br><span class="title__header--green">Foodstuffs</span></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="people">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="people__item">
-                <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
-                <div class="people__title">Smart contract for GitHub</div>
-                <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-                <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="partners wow">
-      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">partners</h2>
-              <div class="title__sub-text">Et harum quidem rerum facilis est et expedita distinctio.</div>
-            </div>
-            <div class="partners__logo-top"><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a></div>
-            <div class="partners__logo-bottom"><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="faq wow">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title wow slideInLeft">
-              <h2 class="title__header">faq</h2>
-              <div class="title__sub-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis </div>
+          <div class="col-md-5">
+            <div class="foodstuffs-img wow flipInX">
+              <div class="foodstuffs-img__item icon">
+                <div class="foodstuffs-icon"></div>
+              </div>
             </div>
           </div>
-          <div class="col-md-8 offset-md-2">
-            <div id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="card">
-                <div class="card-header" role="tab" id="headingOne">
-                  <div class="card-icon-wrap"><a class="card-link card-link-icon" href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">
-                       <i  class="irrow " data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne"></i></a></div>
-                  <h5 class="mb-0 title-card"><a class="card-link" href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
-                </div>
-                <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab" id="headingTwo">
-                  <div class="card-icon-wrap"><a class="card-link collapsed card-link-icon" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo">
-                       <i  class="irrow collapsed " data-parent="#accordion" data-toggle="collapse" data-target="#collapseTwo"></i></a></div>
-                  <h5 class="mb-0 title-card"><a class="card-link collapsed" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
-                </div>
-                <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab" id="headingThree">
-                  <div class="card-icon-wrap"><a class="collapsed card-link card-link-icon" href="#collapseThree" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree">
-                       <i  class="irrow  collapsed" data-parent="#accordion" data-toggle="collapse" data-target="#collapseThree"></i></a></div>
-                  <h5 class="mb-0 title-card"><a class="card-link" href="#collapseThree" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
-                </div>
-                <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
-                </div>
+          <div class="col-md-7">
+            <div class="foodstuffs__article article">
+              <div class="article__title">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
+              <div class="article__text">
+                <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p class="article__paragraph">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-wrap">
-        <div class="footer-contacts wow slideInLeft">
-          <div class="footer-contacts-container">
-            <h2 class="footer-contacts__title">contacts</h2>
-            <div class="footer__phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="footer__link" href="tel:+380967965611"> 380 96 79 65 611</a></div>
-            <div class="footer__email"><i class="fa fa-envelope" aria-hidden="true"></i><a class="footer__link" href="mailto:nagritech@info.com"> nagritech@info.com</a></div>
-            <div class="footer__adress"><i class="fa fa-map-marker" aria-hidden="true"></i>	<span> New York,Hope st. 96/24</span></div>
-            <div class="footer__social"><a class="in-f-icon footer__icon" href=""></a><a class="f-f-icon footer__icon" href=""></a><a class="g-f-icon footer__icon" href=""></a><a class="t-f-icon footer__icon" href=""></a></div>
+    </div>
+  </div>
+  <div class="yields">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="title title--centerer wow slideInLeft">
+            <div class="title__header">Raising<br><span class="title__header--green">Yields</span></div>
           </div>
         </div>
-        <div class="contact-form wow slideInRight">
-          <div class="form-wrap">
-            <h2 class="contact-form__title">GET In touch</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="yields-img">
+            <div class="yields-img__item icon">
+              <div class="yields-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="foodstuffs__article article">
+            <div class="article__title">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
+            <div class="article__text">
+              <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p class="article__paragraph">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget		</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="advantages  wow" id="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">Main advantages</h2>
+          <div class="title__sub-text">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="advantages__item">
+          <div class="icon"> 
+            <div class="icon__item hazardous-icon"></div>
+          </div>
+          <div class="advantages__name">Non-hazardous</div>
+          <div class="advantages__discription">NAgriTech products are non-toxic. They are suitable for organic as well as hydroponic use, and are safe to handle.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="advantages__item">
+          <div class="icon"> 
+            <div class="icon__item use-icon"></div>
+          </div>
+          <div class="advantages__name">Easy to Use</div>
+          <div class="advantages__discription advantages__discription--padding">NAgritech products require virtually no additional equipment or any major modifications to traditional agricultural methods.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="advantages__item">
+          <div class="icon"> 
+            <div class="icon__item effect-icon"></div>
+          </div>
+          <div class="advantages__name">Amazing Effects</div>
+          <div class="advantages__discription">AgriTech products have shown to increase crop yields in field tests as compared to control groups. Stronger roots, more resiliency, greater nutrients, and more...</div>
+        </div>
+      </div>
+      <div class="col-md-12"> 
+        <div class="advantages-button"><a class="btn btn--yellow btn--text-uppercase" href="#">Our Business Plan</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="subscribe wow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">Subscribe <span class="title__header--green">to news</span></h2>
+          <div class="form-container">
             <form action="" method="post">
-              <div class="fields">
-                <input class="contact-form__input" type="text" placeholder="Name">
-                <input class="contact-form__input" type="Email" placeholder="Email">
-                <textarea class="contact-form__textarea" name="" rows="10" placeholder="Messedge"></textarea>
+              <div class="subscribe__field">
+                <input class="subscribe__input" type="email" placeholder="Email">
               </div>
-              <input class="footer__btn" type="submit" value="send">
+              <button class="btn btn--text-uppercase" type="submit">subsribe</button>
             </form>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/libs.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript">
-      var wow = new WOW(
-        {
+    </div>
+  </div>
+</section>
+<section class="token  wow" id="token">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="title title--centerer wow slideInLeft">
+          <div class="title__header">token<br><span class="title__header--green">sale terms</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="chartContainer"></div>
+      </div>
+      <div class="col-md-7">
+        <div class="token__title">The total token supply fixed at<br><span class="token__title--green">1 Billion </span>(1,000,000,000) NGR, of which:</div>
+        <div class="token-container">
+          <div class="token__informantion">
+            <div class="token__name">400M</div>
+            <div class="token__discr">to be available in tokensale.</div>
+          </div>
+          <div class="token__informantion">
+            <div class="token__name">150M</div>
+            <div class="token__discr">are reserved for ICO bonuses.</div>
+          </div>
+          <div class="token__informantion">
+            <div class="token__name">300M</div>
+            <div class="token__discr">retained by NagriTech.</div>
+          </div>
+          <div class="token__informantion">
+            <div class="token__name">Ethereum ERC20</div>
+            <div class="token__discr">token.</div>
+          </div>
+          <div class="token__informantion">
+            <div class="token__name">150M</div>
+            <div class="token__discr">are reserved for early adopters in PRESALE. Public Crowdsale begins September 19th, 2017.</div>
+          </div>
+          <div class="token__informantion">
+            <div class="token__name">BTC and ETH</div>
+            <div class="token__discr token__discr--last">Purchase methods accepted: <br>1 ETH or 0.076 BTC = 10,000 NGR</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="using wow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="title wow slideInLeft">
+          <div class=" title__header title--centerer">using<br><span class="title__header--green">tokens</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="usign__item img"><img class="using__img" src="img/using-tokens-img.png" alt=""></div>
+      </div>
+      <div class="col-md-6">
+        <div class="using__item">
+          <div class="using__title">to spend tokens</div>
+          <div class="using-container">
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+          </div>
+          <div class="using__title">Earn token</div>
+          <div class="using-container">
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+            <div class="using__information">
+              <div class="icon">
+                <div class="molot-icon"></div>
+              </div>
+              <div class="using__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="roadmap wow" id="roadmap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">our<br><span class="title__header--green">roadmap</span></h2>
+        </div>
+        <div class="roadmap-img"><img class="roadmap__img" src="img/roadmap-img.png"></div>
+        <div class="roadmap-content">
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2016</div>
+            <div class="roadmap-content__title">starting up</div>
+            <div class="roadmap-content__text">Aenean euismod bibendum laoreet. Proin gravida muerte savia.</div>
+          </div>
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2017 q1</div>
+            <div class="roadmap-content__title">BUIDING UP AND GETTING REAL EXPERIENCES</div>
+            <div class="roadmap-content__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate. savia.</div>
+          </div>
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2017 q2</div>
+            <div class="roadmap-content__title">OPENING NEW BUSINESS</div>
+            <div class="roadmap-content__text"> Cum sociis natoque penatibus et mag montes.</div>
+          </div>
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2017 q3</div>
+            <div class="roadmap-content__title">ICO AND IPO</div>
+            <div class="roadmap-content__text"> Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget</div>
+          </div>
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2017 q4</div>
+            <div class="roadmap-content__title">SOME HEADER</div>
+            <div class="roadmap-content__text"> Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+          </div>
+          <div class="roadmap-content__item">
+            <div class="roadmap-content__data">2018 Q1</div>
+            <div class="roadmap-content__title">GLOBALIZING PRODUCT</div>
+            <div class="roadmap-content__text"> Aenean euismod bibendum laoreet. Proin gravida muerte savia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="code wow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">Smart contract for GitHub</h2>
+          <div class="title__sub-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</div>
+        </div>
+      </div>
+      <div class="col-md-8 offset-md-2">
+        <div class="code-container">
+          <pre><code class="code__item"> 1. var $red = test; alert(1+1);1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+            1. var $red = test; alert(1+1);
+          1. var $red = test; alert(1+1);</code></pre>
+        </div>
+      </div>
+      <div class="col-md-12"> 
+        <div class="code-button"><a class="btn btn--yellow btn--text-uppercase" href="#">Our code on github</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="documentation wow" id="white-paper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <div class="title__header">main<br><span class="title__header--green">documentation</span></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="documentation__item">
+          <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
+          <div class="documentation__title">Smart contract for GitHub</div>
+          <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="documentation__item">
+          <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
+          <div class="documentation__title">Smart contract for GitHub</div>
+          <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="documentation__item">
+          <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
+          <div class="documentation__title">Smart contract for GitHub</div>
+          <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="documentation__item">
+          <div class="documentation__header"><img class="documentation__img" src="img/documen-img.jpg"></div>
+          <div class="documentation__title">Smart contract for GitHub</div>
+          <div class="documentation__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team wow" id="our-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <div class="title__header">our<br><span class="title__header--green">team</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="people">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2  col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2  col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2  col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2  col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2  col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="advisor wow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <div class="title__header">Supervisory<br><span class="title__header--green">advisors</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="people">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="people__item">
+            <div class="people__header"><img class="people__img" src="img/team-img.jpg"></div>
+            <div class="people__title">Smart contract for GitHub</div>
+            <div class="people__discription">Fcere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+            <div class="people__social social"><a class="people-in-icon social__item" href="#"></a><a class="people-facebook-icon social__item" href="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="partners wow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">partners</h2>
+          <div class="title__sub-text">Et harum quidem rerum facilis est et expedita distinctio.</div>
+        </div>
+        <div class="partners__logo-top"><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a></div>
+        <div class="partners__logo-bottom"><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/blockhain-img.png"></a><a class="partners__link" href="#"><img class="partners__img" src="img/forbes-img.png"></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq wow" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title wow slideInLeft">
+          <h2 class="title__header">faq</h2>
+          <div class="title__sub-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis </div>
+        </div>
+      </div>
+      <div class="col-md-8 offset-md-2">
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <div class="card-icon-wrap"><a class="card-link card-link-icon" href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">
+               <i  class="irrow " data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne"></i></a></div>
+               <h5 class="mb-0 title-card"><a class="card-link" href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
+             </div>
+             <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <div class="card-icon-wrap"><a class="card-link collapsed card-link-icon" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo">
+               <i  class="irrow collapsed " data-parent="#accordion" data-toggle="collapse" data-target="#collapseTwo"></i></a></div>
+               <h5 class="mb-0 title-card"><a class="card-link collapsed" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
+             </div>
+             <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <div class="card-icon-wrap"><a class="collapsed card-link card-link-icon" href="#collapseThree" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree">
+               <i  class="irrow  collapsed" data-parent="#accordion" data-toggle="collapse" data-target="#collapseThree"></i></a></div>
+               <h5 class="mb-0 title-card"><a class="card-link" href="#collapseThree" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree">1. Кem aperiam eaque ipsa, quae ab illo muerte?</a></h5>
+             </div>
+             <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-block">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer" id="contacts">
+  <div class="footer-wrap">
+    <div class="footer-contacts wow slideInLeft">
+      <div class="footer-contacts-container">
+        <h2 class="footer-contacts__title">contacts</h2>
+        <div class="footer__phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="footer__link" href="tel:+380967965611"> 380 96 79 65 611</a></div>
+        <div class="footer__email"><i class="fa fa-envelope" aria-hidden="true"></i><a class="footer__link" href="mailto:nagritech@info.com"> nagritech@info.com</a></div>
+        <div class="footer__adress"><i class="fa fa-map-marker" aria-hidden="true"></i>	<span> New York,Hope st. 96/24</span></div>
+        <div class="footer__social"><a class="in-f-icon footer__icon" href=""></a><a class="f-f-icon footer__icon" href=""></a><a class="g-f-icon footer__icon" href=""></a><a class="t-f-icon footer__icon" href=""></a></div>
+      </div>
+    </div>
+    <div class="contact-form wow slideInRight">
+      <div class="form-wrap">
+        <h2 class="contact-form__title">GET In touch</h2>
+        <form action="" method="post">
+          <div class="fields">
+            <input class="contact-form__input" type="text" placeholder="Name">
+            <input class="contact-form__input" type="Email" placeholder="Email">
+            <textarea class="contact-form__textarea" name="" rows="10" placeholder="Messedge"></textarea>
+          </div>
+          <input class="footer__btn" type="submit" value="send">
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script type="text/javascript">
+  var wow = new WOW(
+  {
           boxClass:     'wow',      // animated element css class (default is wow)
           animateClass: 'animated fadeInUp', // animation css class (default is animated)
           offset:       0,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true // optional scroll container selector, otherwise use window
         }
-      );
-      wow.init();
-    </script>
-    <script>
+        );
+  wow.init();
+</script>
+<script>
     // Set the date we're counting down to
     var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
 
@@ -771,6 +816,6 @@
         //document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
-    </script>
-  </body>
+  </script>
+</body>
 </html>

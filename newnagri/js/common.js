@@ -1,5 +1,30 @@
 
 $(function(){
+	$('a.fl').on('click',function(){
+
+	})
+
+	$('a.fl').featherlight({
+	targetAttr: 'href',
+	otherClose :  true,
+
+	});
+
+
+
+	$('a[href^="#"]').on('click', function(event) {
+
+		var target = $(this.getAttribute('href'));
+
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+
+	});
+
 
 	$('pre code').each(function(i, block) {
 		hljs.highlightBlock(block);
@@ -45,7 +70,7 @@ $(function(){
 		showInLegend: true,
 		toolTipContent: "{name}: <strong>{y}%</strong>",
 		dataPoints: [
-	{ y: 45, name: 	"Availeble", color:'#00CCCB'  },
+		{ y: 45, name: 	"Availeble", color:'#00CCCB'  },
 		{ y: 25, name: 	"Availeble", color:'#0E8D3E'  },
 		{ y: 15, name: 	"Availeble", color:'#05753A'},
 		{ y: 15, name: 	"Availeble", color:'#069488'},
