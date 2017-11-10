@@ -12,44 +12,42 @@
 </head>
 <body> 
 
-<div class="top-form" id="top-form-2">
-    <form action="method">
-      <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Register</h2></div>
-      <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
-      <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
-      <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
-      <div class="top-form__input-container">
-        <input type="checkbox" id="accept_terms" required="required">
-        <label for="accept_terms">I read <a target="_blank" style="color: #1172DF" href="#">terms of investment</a> and agree</label>
-      </div>
-      <div class="top-form__input-container">
-        <input type="checkbox" id="top-form-checked" required="required">
-        <label for="top-form-checked">I'm not a US, Singapore citizen</label>
-      </div>
-    <button class="top-form-btn" type="submit">Sign Up</button>
-    </form>
-    <hr class="top-form-hr">
-    <div class="top-form-sub-content">I am already registered. Go to <a  class="fl" href="#top-form-1" style="text-align: center;color:blue;">Sign In form</a> </div>
+  <div class="form-up-container" id="form-up-container">
+    <div class="top-form" id="top-form-2">
+      <form action="method">
+        <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Register</h2></div>
+        <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
+        <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
+        <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
+        <div class="top-form__input-container">
+          <input type="checkbox" id="accept_terms" required="required">
+          <label for="accept_terms">I read <a target="_blank" style="color: #1172DF" href="#">terms of investment</a> and agree</label>
+        </div>
+        <div class="top-form__input-container">
+          <input type="checkbox" id="top-form-checked" required="required">
+          <label for="top-form-checked">I'm not a US, Singapore citizen</label>
+        </div>
+        <button class="top-form-btn" type="submit">Sign Up</button>
+      </form>
+      <hr class="top-form-hr">
+      <div class="top-form-sub-content">I am already registered. Go to <a  class="fl" href="#" style="text-align: center;color:blue;">Sign In form</a> </div>
+    </div>
+
+    <div class="top-form" id="top-form-1">
+      <form action="method">
+        <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Login</h2></div>
+        <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
+        <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
+        <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
+        <button class="top-form-btn" type="submit">Sign Up</button>
+      </form>
+      <hr class="top-form-hr">
+      <div class="top-form-sub-content"> Go to <a href="#top-form-2" class="fl"  style="text-align: center;color:blue;">Register</a> </div>
+    </div>
+
+
   </div>
 
-
-
-
-  <div class="top-form" id="top-form-1">
-    <form action="method">
-      <div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Register</h2></div>
-      <div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
-      <div class="field"><input class="top-form__input" name="password" placeholder="* Password" required="" type="password"></div>
-      <div class="field"><input class="top-form__input" name="password_confirmation" placeholder="* Repeat password" required="" type="password"></div>
-     <button class="top-form-btn" type="submit">Sign Up</button>
-    </form>
-    <hr class="top-form-hr">
-    <div class="top-form-sub-content">I am already registered. Go to <a href="#top-form-2" class="fl"  style="text-align: center;color:blue;">Sign In form</a> </div>
-  </div>
-
-
- 
- 
 
 
   <header class="header" ><div id="myCounter"></div>
@@ -119,7 +117,7 @@
                 <div class="time__name">seconds</div>
               </div>
             </div>
-            <div class="header-button wow"><a class="btn btn--yellow btn--text-uppercase fl" href="#top-form-2">Take part in pre-ICO</a></div>
+            <div class="header-button wow"><a class="btn btn--yellow btn--text-uppercase fl" href="#form-up-container">Take part in pre-ICO</a></div>
             <div class="slider">
               <p class="slider__count">
                 <label for="amount">ETH</label>
