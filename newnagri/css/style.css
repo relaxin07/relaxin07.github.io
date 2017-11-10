@@ -16,7 +16,7 @@ text-transform: uppercase;
 display: inline-block;
 color: #2e2e2e;
 text-decoration: none;
-font-family: 'times new roman';
+font-family: 'GothamPro-Bold';
 }
 .btn--text-uppercase {
 text-transform: uppercase; 
@@ -43,8 +43,15 @@ src: url("../fonts/Lato-Bold.ttf"); }
 font-family: 'Lato-Regular';
 src: url("../fonts/Lato-Regular.ttf"); }
 
+
+.top-form-sub-content{
+    color:#fff;
+}
 .form-up-container{
 display: none;
+}
+.top-form-link{
+    color:#F1CF69;
 }
 .top-form{
 	display: block;
@@ -60,11 +67,15 @@ display: none;
 	margin:20px 0;
 }
 
+.top-form__input-container label{
+    color:#fff;
+}
+
 .top-form__input {
     margin: 0;
     padding: 14px 20px 14px 20px;
     width: 360px ;
-    font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
+   font-family: 'lato-regular';
     font-size: 20px;
     font-weight: 300;
     color: #000000;
@@ -89,17 +100,14 @@ display: none;
    display: block;
    
     text-align: center;
-    background-color: #1172DF;
+    background-color: #F1CF69;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    -moz-box-shadow: 0 7px 35px rgba(17, 114, 223, 0.35);
-    -webkit-box-shadow: 0 7px 35px rgba(17, 114, 223, 0.35);
-    box-shadow: 0 7px 35px rgba(17, 114, 223, 0.35);
     font-size: 20px;
     font-weight: 300;
     font-family: 'GothamPro-Bold';
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
     transition: 0.2s;
     padding: 15px 20px 15px 20px;
@@ -107,8 +115,13 @@ display: none;
     min-width: 160px;
     width: 360px;
     margin-top: 20px;
+    border:none;
+
    
 
+}
+.featherlight .featherlight-content{
+    background: #333 !important;
 }
 @media(max-width: 450px){
 	.top-form-btn{

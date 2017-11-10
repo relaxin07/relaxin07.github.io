@@ -1,8 +1,6 @@
 
 $(function(){
-	$('a.fl').on('click',function(){
-
-	})
+	
 
 	$('a.fl').featherlight({
 	targetAttr: 'href',
@@ -12,7 +10,7 @@ $(function(){
 
 
 
-	$('a[href^="#"]').on('click', function(event) {
+	$('nav a[href^="#"]').on('click', function(event) {
 
 		var target = $(this.getAttribute('href'));
 
