@@ -7,7 +7,69 @@ $(function(){
 	otherClose :  true,
 
 	});
+$('.partners-t-slider').owlCarousel({
+		nav: true,
+		loop:true,
+		touchDrag: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsive:{
+			0:{
+				items:1
+			},
+			400:{
+				items:2
+			},
+			700:{
+				items:3
+			},
+			1200:{
+				items:5
+			},
+			1440:{
+				items: 6,
+				
+			},
 
+		},
+
+		
+
+	});
+$('.partners__logo-top').owlCarousel({
+		nav: true,
+		loop:true,
+		touchDrag: true,
+		//autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		responsive:true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsive:{
+			0:{
+				items:2
+			},
+			415:{
+				items:2
+			},
+			800:{
+				items:3
+			},
+			1200:{
+				items:5
+			},
+			1440:{
+				items: 6,
+				
+			},
+
+		},
+
+		
+
+	});
 
 
 	$('nav a[href^="#"]').on('click', function(event) {

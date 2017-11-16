@@ -9,11 +9,45 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
   </head>
   <body> <div class="top-form" id="top-form-2">
-<form action="method">
-<div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Форма</h2></div>
-<div class="field"><input class="top-form__input" name="email" placeholder="* Email" Email" required="" type="email"></div>
-<div class="field"><input class="top-form__input" name="password" placeholder="Password" required="" type="password"></div>
-<div class="field"><input class="top-form__input" name="password_confirmation" placeholder="Repeat password" required="" type="password"></div>
+<form action="" method="post">
+<div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Обратная связь</h2></div>
+<div class="field"><input class="top-form__input" name="name" placeholder="* Имя" Email" required="" type="email"></div>
+<div class="field"><input class="top-form__input" name="tel" placeholder="* Телефон" required="" type="tel"></div>
+<button class="top-form-btn btn btn--yellow" type="submit">отправить</button>
+</form>
+</div><div class="top-form" id="form-reviews">
+<div class="scan"><img class="scan__img" src="img/scan.jpg" alt=""></div>
+</div><div class="top-form" id="register-form">
+<form action="" method="post">
+<div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Регистрация</h2></div>
+<div class="field"><input class="top-form__input" name="name" placeholder="Имя" Email" type="email"></div>
+<div class="field"><input class="top-form__input" name="tel" placeholder="* Телефон" required="" type="tel"></div>
+<div class="field"><input class="top-form__input" name="email" placeholder="* Электронный адрес" required="" type="email"></div>
+<button class="top-form-btn btn btn--yellow" type="submit">отправить</button>
+</form>
+</div><div class="top-form" id="event-course-form">
+    <div class="event-column">
+      <div class="event-column__img-b"><img class="event-column__img" src="img/event-img.jpg" alt="picture"></div>
+      <div class="event-column__data">25.06.2017</div>
+      <div class="event-column__title event-column__title--with-botton-line"> lorem ipsum dolor sit amet</div>
+      <div class="event-column__type">индивидуальное</div>
+      <div class="event-column__discr event-column__discr-more"> Quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt voluptatem.</div>
+      <div class="event-column-btn"></div>
+    </div></div><div class="top-form" id="ready-form">
+<form action="" method="post">
+<div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Свяжитесь со мной</h2></div>
+<div class="field"><input class="top-form__input" name="name" placeholder="Имя" Email" type="email"></div>
+<div class="field"><input class="top-form__input" name="tel" placeholder="* Телефон" required="" type="tel"></div>
+<div class="field"><input class="top-form__input" name="email" placeholder="* Электронный адрес" required="" type="email"></div>
+<button class="top-form-btn btn btn--yellow" type="submit">отправить</button>
+</form>
+</div><div class="top-form" id="question-form">
+<form action="" method="post">
+<div class="title"><h2 style="color: grey; text-align:center"; class="title__header">Свяжитесь со мной</h2></div>
+<div class="field"><input class="top-form__input" name="name" placeholder="Имя" Email" type="email"></div>
+<div class="field"><input class="top-form__input" name="tel" placeholder="* Телефон" required="" type="tel"></div>
+<div class="field"><input class="top-form__input" name="email" placeholder="* Электронный адрес" required="" type="email"></div>
+<div class="field"><textarea class="top-form__input" name="textarea" placeholder="Сообщение" required="" type="email"></textarea></div>
 <button class="top-form-btn btn btn--yellow" type="submit">отправить</button>
 </form>
 </div>
@@ -74,7 +108,7 @@
             <div class="reviews-main__header"><img class="reviews-main__img" src="img/reviews-img.png" alt=""></div>
             <div class="reviews-main__company"></div>
             <div class="reviews-main__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco”</div>
-            <div class="reviews-main__btn"><a class="btn btn--yellow" href="">смореть письмо</a></div>
+            <div class="reviews-main__btn"><a class="fl btn btn--yellow" href="#form-reviews">смореть письмо</a></div>
           </div>
         </div>
       </div>
@@ -290,7 +324,7 @@
                 <div class="event-wrap">
                   <div class="event-b__header">Sed ut perspiciatis, unde omnis</div>
                   <div class="event-b__text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam</div>
-                  <div class="event-btn"><a class="fl btn event-b__btn event-b__btn--yellow" href="#top-form-2">регистрация</a></div>
+                  <div class="event-btn"><a class="fl btn event-b__btn event-b__btn--yellow" href="#register-form">регистрация</a></div>
                 </div>
               </div>
             </div>
@@ -314,7 +348,7 @@
                 <div class="event-column__title event-column__title--with-botton-line"> lorem ipsum dolor sit amet</div>
                 <div class="event-column__type">индивидуальное</div>
                 <div class="event-column__discr"> Quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt voluptatem.</div>
-                <div class="event-column-btn"><a class="btn event-column__btn event-column__btn--white" href="">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#top-form-2">Регистрация</a></div>
+                <div class="event-column-btn"><a class="fl btn event-column__btn event-column__btn--white" href="#event-course-form">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#register-form">Регистрация</a></div>
               </div>
             </div>
             <div class="col-md-3">
@@ -324,7 +358,7 @@
                 <div class="event-column__title event-column__title--with-botton-line"> lorem ipsum dolor sit amet</div>
                 <div class="event-column__type">индивидуальное</div>
                 <div class="event-column__discr"> Quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt voluptatem.</div>
-                <div class="event-column-btn"><a class="btn event-column__btn event-column__btn--white" href="">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#top-form-2">Регистрация</a></div>
+                <div class="event-column-btn"><a class="fl btn event-column__btn event-column__btn--white" href="#event-course-form">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#register-form">Регистрация</a></div>
               </div>
             </div>
             <div class="col-md-3">
@@ -334,7 +368,7 @@
                 <div class="event-column__title event-column__title--with-botton-line"> lorem ipsum dolor sit amet</div>
                 <div class="event-column__type">индивидуальное</div>
                 <div class="event-column__discr"> Quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt voluptatem.</div>
-                <div class="event-column-btn"><a class="btn event-column__btn event-column__btn--white" href="">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#top-form-2">Регистрация</a></div>
+                <div class="event-column-btn"><a class="fl btn event-column__btn event-column__btn--white" href="#event-course-form">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#register-form">Регистрация</a></div>
               </div>
             </div>
             <div class="col-md-3">
@@ -344,7 +378,7 @@
                 <div class="event-column__title event-column__title--with-botton-line"> lorem ipsum dolor sit amet</div>
                 <div class="event-column__type">индивидуальное</div>
                 <div class="event-column__discr"> Quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt voluptatem.</div>
-                <div class="event-column-btn"><a class="btn event-column__btn event-column__btn--white" href="">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#top-form-2">Регистрация</a></div>
+                <div class="event-column-btn"><a class="fl btn event-column__btn event-column__btn--white" href="#event-course-form">подробнее</a><a class="fl btn event-column__btn event-column__btn--yellow" href="#register-form">Регистрация</a></div>
               </div>
             </div>
           </div>
@@ -512,7 +546,7 @@
               <h2 class="title__text">Готовы записаться на наш курс?</h2>
             </div>
             <div class="course__images"><img class="course__img" src="img/course-girl.png" alt=""><img class="course__img" src="img/course-man.png" alt=""></div>
-            <div class="course__buttons"><a class="btn btn--yellow" href=""> ДА, я готов. Свяжитесь со мной</a><a class="btn btn--transparent" href=""> нет у меня осталось пару вопросов</a></div>
+            <div class="course__buttons"><a class="fl btn btn--yellow" href="#ready-form"> ДА, я готов. Свяжитесь со мной</a><a class="fl btn btn--transparent" href="#question-form"> нет у меня осталось пару вопросов</a></div>
           </div>
         </div>
       </div>
