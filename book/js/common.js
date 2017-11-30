@@ -31,11 +31,15 @@ $(function(){
           });
         });
         $(".books__main").turn({
-         
-          autoCenter: true,
-          zoom: 0.5
+         display: 'double',
+         autoCenter: true,
+         acceleration: true,
+         width: 750,
+         height: 550,
+         page: 2
 
-        });
+
+       });
         $('.my-video-display').prettyEmbed({
           videoID: '',
           previewSize: 'hd',				
@@ -112,7 +116,16 @@ $(window).scroll(function(){
 
    });
 new WOW().init();
-	/*$(document).on("scroll",onScroll);
+
+var mql = window.matchMedia('all and (max-width: 767px)');
+if (mql.matches) {
+  $('.books__item a').replaceWith(function(index,oldHTML){
+    return $("<span>").html(oldHTML);
+  });
+  
+}	
+
+/*$(document).on("scroll",onScroll);
 
   //smoothscroll
   $('a.nav__item').on('click', function(e) {

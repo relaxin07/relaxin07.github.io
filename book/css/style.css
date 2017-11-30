@@ -39,7 +39,9 @@
   background-image: url(../img/header-bgr.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 165px; }
+  padding-bottom: 165px;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .header__name {
     font-size: 27px;
     line-height: 40px;
@@ -211,7 +213,7 @@
 .page {
   background-color: #fff;
   color: #000;
-  font-size: 10px;
+  font-size: 11px;
   padding: 0 3px;
   overflow-y: auto; }
 
@@ -240,7 +242,8 @@
   text-align: center;
   z-index: 10;
   padding-top: 80px;
-  background-position: top center; }
+  background-position: top center;
+  padding-bottom: 50px; }
   .hamburger-menu__name {
     margin-top: 23px;
     text-transform: uppercase;
@@ -757,6 +760,14 @@ li {
 
 #b-form {
   display: none; }
+
+#book-form {
+  background: transparent;
+  border: none; }
+  #book-form .modal_close {
+    top: -50px;
+    right: -6%;
+    font-size: 35px; }
 
 .form-back {
   text-align: center; }
