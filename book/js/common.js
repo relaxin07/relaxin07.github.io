@@ -35,7 +35,7 @@ $(function(){
          autoCenter: true,
          acceleration: true,
       
-         page: 1
+         page: 2
 
 
        });
