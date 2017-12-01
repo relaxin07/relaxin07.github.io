@@ -34,7 +34,8 @@ $(function(){
          display: 'double',
          autoCenter: true,
          acceleration: true,
-      
+        width: 600,
+        height: 450,
          page: 2
 
 
