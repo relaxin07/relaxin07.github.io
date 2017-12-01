@@ -34,9 +34,8 @@ $(function(){
          display: 'double',
          autoCenter: true,
          acceleration: true,
-         width: 750,
-         height: 550,
-         page: 2
+      
+         page: 1
 
 
        });
