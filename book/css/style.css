@@ -213,7 +213,7 @@
 .page {
   background-color: #fff;
   color: #000;
-  font-size: 18px;
+  font-size: 11px;
   padding: 0 3px;
   overflow-y: auto; }
 
@@ -752,6 +752,11 @@
   .copyright__item {
     font-size: 15px;
     line-height: 30px; }
+
+.bk-cover-back, .bk-cover {
+  background: url(../img/bonus-church.jpg);
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 body {
   font-family: "Lato-regular", sans-serif;

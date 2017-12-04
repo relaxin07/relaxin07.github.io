@@ -815,7 +815,9 @@ textarea.top-form__input {
     margin: auto;
     margin-top: 5px;
     font-size: 16px;
-    line-height: 25px; }
+    line-height: 25px;
+    font-family: "lato-regular";
+     }
 
 .team-b {
   margin-top: 70px; }
