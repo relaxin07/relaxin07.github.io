@@ -125,7 +125,7 @@ if (mql.matches) {
   });
   
 }	
-    Books.init();
+   
 
 /*$(document).on("scroll",onScroll);
 
