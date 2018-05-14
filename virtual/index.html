@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow"/>
     <title>VR</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/libs.css">
@@ -16,16 +17,16 @@
             <div class="logo"><img class="logo__item" src="img/logo.png" alt="logo"></div>
           </div>
           <div class="col-md-7">
-            <nav class="nav"><a class="nav__item active" href="#">Главная</a><a class="nav__item" href="#">Наши Услуги</a><a class="nav__item" href="#">Портфолио</a><a class="nav__item" href="#">Наша команда</a><a class="nav__item" href="#">Цена</a><a class="nav__item" href="#">Блог</a><a class="nav__item" href="#">Контакты</a></nav>
+            <nav class="nav"><a class="nav__item active-link" href="#">Главная</a><a class="nav__item" href="#">Наши Услуги</a><a class="nav__item" href="#">Портфолио</a><a class="nav__item" href="#">Наша команда</a><a class="nav__item" href="#">Цена</a><a class="nav__item" href="#">Блог</a><a class="nav__item" href="#">Контакты</a></nav>
           </div>
           <div class="col-md-4">
             <div class="contacts">
               <div class="contacts__item">
-                <div class="contacts__img"><img src="img/letter-icon.png" alt=""></div>
+                <div class="contacts__img"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                 <div class="contacts__content"><a class="contacts__text" href="#">info@appfox.ru</a><a class="contacts__link" href="#">Назначить встречу</a></div>
               </div>
               <div class="contacts__item">
-                <div class="contacts__img"><img src="img/phone-icon.png" alt=""></div>
+                <div class="contacts__img"><i class="fa fa-phone" aria-hidden="true"></i></div>
                 <div class="contacts__content"><a class="contacts__text" href="#">8 496 000-00-00</a><a class="contacts__link" href="#">Заказать звонок</a></div>
               </div>
             </div>
@@ -56,7 +57,7 @@
       </div>
     </header>
     <section class="portfolio-b">
-      <div class="container">
+      <div class="container portfolio-c">
         <div class="row">
           <div class="col-md-6">
             <div class="s-title">
@@ -81,47 +82,485 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="portfolio">
-              <div class="portfolio__img"></div>
+            <div class="portfolio portfolio--border-r">
+              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
               <h4 class="portfolio__header">Работа с хорошим названием</h4>
               <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div>
-              <div class="portfolio__btn btn btn--green"></div>
+              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--green" href="">подробнее</a>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="portfolio">
-              <div class="portfolio__img"></div>
+            <div class="portfolio portfolio--border-r">
+              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
               <h4 class="portfolio__header">Работа с хорошим названием</h4>
               <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div>
-              <div class="portfolio__btn btn btn--green"></div>
+              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="portfolio">
-              <div class="portfolio__img"></div>
+            <div class="portfolio portfolio--border-r">
+              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
               <h4 class="portfolio__header">Работа с хорошим названием</h4>
               <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div>
-              <div class="portfolio__btn btn btn--green"></div>
+              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--blue" href="">подробнее</a>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="portfolio">
-              <div class="portfolio__img"></div>
+            <div class="portfolio portfolio--border-r">
+              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
               <h4 class="portfolio__header">Работа с хорошим названием</h4>
               <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div>
-              <div class="portfolio__btn btn btn--green"></div>
+              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-5"><a class="btn btn-all-portfolio" href="#"></a></div>
+          <div class="col-md-5"><a class="btn btn-all-portfolio active-link" href="#">Посмотреть все работы</a></div>
         </div>
       </div>
     </section>
+    <section class="services">
+      <div class="services-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="s-title">
+                <h3 class="s-title__header">наши <span>услуги</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service__icon-main"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                <div class="service__title">Бизнес</div>
+                <div class="service__item"><i class="fa fa-simplybuilt" aria-hidden="true"></i><span>Симуляторы</span></div>
+                <div class="service__item"><i class="fa fa-street-view" aria-hidden="true"></i><span>Тренажоры</span></div>
+                <div class="service__item"><i class="fa fa-bicycle" aria-hidden="true"></i>Атракционы</div>
+                <div class="service__item"><i class="fa fa-home" aria-hidden="true"></i><span>Дизайн интергера</span></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service__icon-main"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
+                <div class="service__title">Приложения</div>
+                <div class="service__item"><i class="fa fa-th-large" aria-hidden="true"></i>Контент</div>
+                <div class="service__item"><i class="fa fa-space-shuttle" aria-hidden="true"></i><span>Виртуальная реальность</span></div>
+                <div class="service__item"><i class="fa fa-android" aria-hidden="true"></i><span>Андроид</span></div>
+                <div class="service__item"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Игры</span></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service__icon-main"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+                <div class="service__title">Устройсва</div>
+                <div class="service__item"><i class="fa fa-bomb" aria-hidden="true"></i> <span>Oculus</span></div>
+                <div class="service__item"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Gear VR</span></div>
+                <div class="service__item"><i class="fa fa-space-shuttle" aria-hidden="true"></i><span>HTC</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-seo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="s-title">
+              <h3 class="s-title__header">seo <span>text</span></h3>
+              <div class="s-title__sub-text">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-s">dfg
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-6">
+            <div class="about">
+              <div class="s-title">
+                <h3 class="s-title__header">кто <span>мы</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about about--mrgn">
+              <div class="s-title">
+                <h3 class="s-title__header">что <span>можем</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-wrap">
+      <section class="s-tap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="s-title">
+                <h3 class="s-title__header">сроки и <span>стоимость</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="price">
+                <div class="price__item"><span class="price__money">650 рублей</span><span class="price__line">/</span><span class="price__time">час</span>
+                  <div class="price__sub">Работа специалиста</div>
+                </div>
+              </div>
+              <div class="price">
+                <div class="price__item"><span class="price__money">24</span><span class="price__line">/</span><span class="price__time">7</span></div>
+                <div class="price__sub">мы на связи</div>
+              </div>
+              <div class="price">
+                <div class="price__item"><span class="price__money">7 </span><span class="price__time">лет</span>
+                  <div class="price__sub">опыт работы</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-ar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="s-title">
+                <h3 class="s-title__header">Ar <span>разработка</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-vr-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-6">
+              <div class="s-title">
+                <h3 class="s-title__header">vr <span>контент</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="s-vr-develop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">vr <span>разработка</span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-our-proj"><img class="proj-decor proj-decor-1" src="img/proj-decor-1.png" alt=""><img class="proj-decor proj-decor-2" src="img/proj-decor-2.png" alt=""><img class="proj-decor proj-decor-3" src="img/proj-decor-3.png" alt=""><img class="proj-decor proj-decor-4" src="img/proj-decor-4.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">Продвигаем <span>ваш проект </span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="s-steps">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-2">
+              <div class="s-title">
+                <h3 class="s-title__header">Этапы <span>Работы</span></h3>
+                <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 offset-md-2">
+              <div class="step">
+                <div class="step__item">
+                  <div class="step__nmbr">1 </div>
+                  <div class="step__text">Готовим документация</div>
+                </div>
+                <div class="step__item">
+                  <div class="step__nmbr">2</div>
+                  <div class="step__text">Прототируем проект</div>
+                </div>
+                <div class="step__item">
+                  <div class="step__nmbr">3</div>
+                  <div class="step__text">Отрисовываем интерфейс</div>
+                </div>
+                <div class="step__item">
+                  <div class="step__nmbr">4</div>
+                  <div class="step__text">програмирываем и тестируем</div>
+                </div>
+                <div class="step__item">
+                  <div class="step__nmbr">5</div>
+                  <div class="step__text">сдаем готовую работу</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="s-reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">Отзывы<span>клиентов</span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="reviews">
+              <div class="reviews__header">
+                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+              </div>
+              <div class="reviews__author">Анастасия Сокол</div>
+              <div class="reviews__data">комментарий от 7.11.20.17</div>
+              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+            </div>
+            <div class="reviews">
+              <div class="reviews__header">
+                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+              </div>
+              <div class="reviews__author">Анастасия Сокол</div>
+              <div class="reviews__data">комментарий от 7.11.20.17</div>
+              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+            </div>
+            <div class="reviews">
+              <div class="reviews__header">
+                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+              </div>
+              <div class="reviews__author">Анастасия Сокол</div>
+              <div class="reviews__data">комментарий от 7.11.20.17</div>
+              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-seo b-seo--mrgn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="s-title">
+              <h3 class="s-title__header">seo <span>text</span></h3>
+              <div class="s-title__sub-text">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-company"><img class="company-decor-img company-decor-img-1" src="img/gamepad-sm.png" alt=""><img class="company-decor-img company-decor-img-2" src="img/gamepad-big.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">о<span>компании</span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sertificate"><img class="sertificate__item" src="img/company-1.jpg" alt=""><img class="sertificate__item" src="img/company-2.jpg" alt=""><img class="sertificate__item" src="img/company-3.jpg" alt=""><img class="sertificate__item" src="img/company-4.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <div class="team">
+              <div class="team__item"><img src="img/team.jpg" alt="team"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">Наша<span>команда</span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+            </div><a class="btn btn--blue btn--team" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i><span>Посмотреть всю команду</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-online">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="s-title">
+              <h3 class="s-title__header">онлайн <span>заявку</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="#" method="post">
+              <div class="form-online">
+                <div class="form-online__header">
+                  Заполните форму <br />и мы вяжимся с вами</div>
+                <div class="form-online__item-wrap">
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-user-circle-o" aria-hidden="true"></i> <span>Ваше имя</span></label>
+                    <input class="form-online__input" type="text" placeholder="Андрей" id="name-online">
+                  </div>
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-phone" aria-hidden="true"></i> <span>Телефон</span></label>
+                    <input class="form-online__input" type="text" placeholder="+7" id="phone-online">
+                  </div>
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-envelope" aria-hidden="true"></i> <span>E-mail</span></label>
+                    <input class="form-online__input" type="text" placeholder="mail" id="email-online">
+                  </div>
+                </div>
+                <div class="form-online__budget budget">
+                  <div class="budget__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет	</div>
+                  <div class="budget__content">
+                    <div class="budget__start">от 100 000 <span>руб.</span></div>
+                    <div class="budget__end">свыше 5 млн <span>Руб.</span></div>
+                  </div><img class="budget__line" src="img/online-line.png" alt="">
+                </div>
+                <div class="form-online__area-wrap">
+                  <div class="form-online__area-header">
+                    <label for=""><i class="fa fa-comment-o" aria-hidden="true"></i> Коментарий</label>
+                  </div>
+                  <div class="form-online__area-content">
+                    <textarea name="" cols="30" rows="10" placeholder="Пара слов"></textarea>
+                  </div>
+                </div>
+                <input type="checkbox">
+                <input type="file"><span class="text-checkbox">
+                   Я согласен<span>с условиями оферты</span></span><span class="document"><i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ</span>
+                <input class="btn btn-form-online btn--gradient" type="submit" value="Отправить">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="online-decor-img"><img src="img/footer-man.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="s-title__header">наши <span>компитенции</span></h3>
+            <div class="partners owl-carousel">
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="s-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+            <div class="footer-logo"><img src="img/logo-footer.png" alt="logo-img"></div>
+            <div class="social"><span class="social__header">Рассказать друзьям:</span><i class="fa fa-facebook-square" aria-hidden="true"></i>
+<i class="fa fa-vk" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-nav">
+              <div class="footer-nav__item">
+                <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
+              </div>
+              <div class="footer-nav__item">
+                <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
+              </div>
+              <div class="footer-nav__item">
+                <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
+              </div>
+              <div class="footer-nav__item">
+                <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
+              </div>
+              <div class="footer-nav__item">
+                <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="download">
+              <div class="download__header">материалы для скачивания</div>
+              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="">Типовой договор</a></div>
+              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="">Бриф</a></div>
+              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="">PDF Презентация</a></div>
+            </div>
+            <div class="contacts">
+              <div class="contacts__item">
+                <div class="contacts__img"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="contacts__content"><a class="contacts__text" href="#">info@appfox.ru</a><a class="contacts__link" href="#">Назначить встречу</a></div>
+              </div>
+              <div class="contacts__item">
+                <div class="contacts__img"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="contacts__content"><a class="contacts__text" href="#">8 496 000-00-00</a><a class="contacts__link" href="#">Заказать звонок</a></div>
+              </div>
+              <div class="social-icon clearfix"><a class="social-icon__link" href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-google" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
+            </div>
+            <form action="#" method="post">
+              <div class="form-online">
+                <div class="form-online__header">
+                  Заполните форму <br />и мы вяжимся с вами</div>
+                <div class="form-online__item-wrap">
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-user-circle-o" aria-hidden="true"></i> <span>Ваше имя</span></label>
+                    <input class="form-online__input form-online__input--border" type="text" placeholder="Андрей" id="name-online">
+                  </div>
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-phone" aria-hidden="true"></i> <span>Телефон</span></label>
+                    <input class="form-online__input form-online__input--border" type="text" placeholder="+7" id="phone-online">
+                  </div>
+                  <div class="form-online__input-item">
+                    <label>
+                       <i class="fa fa-envelope" aria-hidden="true"></i> <span>E-mail</span></label>
+                    <input class="form-online__input form-online__input--border" type="text" placeholder="mail" id="email-online">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-11 offset-md-1">
+            <div class="footer-bottom"><a class="footer-bottom__link" href="#">Написать письмо руководителю</a><span class="footer-bottom__text">Политика конфедициальности</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </body>
