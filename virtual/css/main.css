@@ -1274,7 +1274,7 @@ body {
         top: -60px; } }
   .s-reviews:after {
     content: " ";
-    top: -307px;
+    top: -338px;
     position: absolute;
     left: -webkit-calc(50% - 170px);
     left: calc(50% - 170px);
@@ -2010,4 +2010,8 @@ body {
   border: 1px solid #666;
   width: 64px;
   text-align: center;
-  height: 64px; }
+  height: 64px;
+  z-index: 2; }
+  @media (max-width: 992px) {
+    .btn-to-top {
+      display: none; } }
