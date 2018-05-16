@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
     <title>VR</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/libs.css">
@@ -13,13 +12,21 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-md-1 col-6">
             <div class="logo"><img class="logo__item" src="img/logo.png" alt="logo"></div>
           </div>
-          <div class="col-md-7">
-            <nav class="nav"><a class="nav__item active-link" href="#">Главная</a><a class="nav__item" href="#">Наши Услуги</a><a class="nav__item" href="#">Портфолио</a><a class="nav__item" href="#">Наша команда</a><a class="nav__item" href="#">Цена</a><a class="nav__item" href="#">Блог</a><a class="nav__item" href="#">Контакты</a></nav>
-          </div>
-          <div class="col-md-4">
+          <div class="col-md-11 col-6">
+            <nav class="nav">
+              <ul class="nav__wrap">
+                <li class="nav__container"><a class="nav__item active-link" href="#">Главная</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Наши Услуги</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Портфолио</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Наша команда</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Цена</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Блог</a></li>
+                <li class="nav__container"><a class="nav__item" href="#">Контакты</a></li>
+              </ul>
+            </nav>
             <div class="contacts">
               <div class="contacts__item">
                 <div class="contacts__img"><i class="fa fa-envelope" aria-hidden="true"></i></div>
@@ -29,11 +36,12 @@
                 <div class="contacts__img"><i class="fa fa-phone" aria-hidden="true"></i></div>
                 <div class="contacts__content"><a class="contacts__text" href="#">8 496 000-00-00</a><a class="contacts__link" href="#">Заказать звонок</a></div>
               </div>
+              <div class="b-hamburger"><a class="hamburger hamburger--squeeze" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="name-menu-hamburger"></span></a></div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-12">
             <div class="header-content">
               <div class="main-title">
                 <h1 class="main-title__item">
@@ -43,14 +51,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8 offset-md-4"> 
+          <div class="col-md-8 offset-md-4 col-12">
             <div class="scroll-b">
-              <div class="scroll-b__point">
-                <div class="scroll-b__point-item active"></div>
-                <div class="scroll-b__point-item"></div>
-                <div class="scroll-b__point-item"></div>
+              <div class="scroll-b__slide">
+                <!--.scroll-b__point
+                .scroll-b__point-item.active
+                .scroll-b__point-item
+                .scroll-b__point-item
+                -->
+                <div class="scroll-b__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</div>
               </div>
-              <div class="scroll-b__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </div>
+              <div class="scroll-b__slide">
+                <!--.scroll-b__point
+                .scroll-b__point-item.active
+                .scroll-b__point-item
+                .scroll-b__point-item
+                -->
+                <div class="scroll-b__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </div>
+              </div>
+              <div class="scroll-b__slide">
+                <!--.scroll-b__point
+                .scroll-b__point-item.active
+                .scroll-b__point-item
+                .scroll-b__point-item
+                -->
+                <div class="scroll-b__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </div>
+              </div>
             </div>
           </div>
         </div>
@@ -62,9 +88,7 @@
           <div class="col-md-6">
             <div class="s-title">
               <h3 class="s-title__header">портфолио</h3>
-            </div>
-            <div class="portfolio-slider owl-carousel">
-              <div class="portfolio-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
             </div>
           </div>
           <div class="col-md-12">
@@ -79,38 +103,48 @@
               <div class="portfolio-wrap__right"></div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="portfolio portfolio--border-r">
-              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
-              <h4 class="portfolio__header">Работа с хорошим названием</h4>
-              <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--green" href="">подробнее</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="portfolio portfolio--border-r">
-              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
-              <h4 class="portfolio__header">Работа с хорошим названием</h4>
-              <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="portfolio portfolio--border-r">
-              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
-              <h4 class="portfolio__header">Работа с хорошим названием</h4>
-              <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--blue" href="">подробнее</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="portfolio portfolio--border-r">
-              <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
-              <h4 class="portfolio__header">Работа с хорошим названием</h4>
-              <div class="portfolio__data">11.11.17</div>
-              <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
+          <div class="col-md-12">
+            <div class="portfolio-sl">
+              <div class="portfolio-slider__slide">
+                <div class="portfolio portfolio--border-r">
+                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
+                  <div class="portfolio__data">11.11.17</div>
+                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--green" href="">подробнее</a>
+                </div>
+              </div>
+              <div class="portfolio-slider__slide">
+                <div class="portfolio portfolio--border-r">
+                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
+                  <div class="portfolio__data">11.11.17</div>
+                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
+                </div>
+              </div>
+              <div class="portfolio-slider__slide">
+                <div class="portfolio portfolio--border-r">
+                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
+                  <div class="portfolio__data">11.11.17</div>
+                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--blue" href="">подробнее</a>
+                </div>
+              </div>
+              <div class="portfolio-slider__slide">
+                <div class="portfolio portfolio--border-r">
+                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
+                  <div class="portfolio__data">11.11.17</div>
+                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
+                </div>
+              </div>
+              <div class="portfolio-slider__slide">
+                <div class="portfolio portfolio--border-r">
+                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
+                  <div class="portfolio__data">11.11.17</div>
+                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +175,7 @@
                 <div class="service__item"><i class="fa fa-home" aria-hidden="true"></i><span>Дизайн интергера</span></div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-12">
               <div class="service">
                 <div class="service__icon-main"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
                 <div class="service__title">Приложения</div>
@@ -151,7 +185,7 @@
                 <div class="service__item"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Игры</span></div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-12">
               <div class="service">
                 <div class="service__icon-main"><i class="fa fa-cogs" aria-hidden="true"></i></div>
                 <div class="service__title">Устройсва</div>
@@ -170,16 +204,16 @@
           <div class="col-md-12">
             <div class="s-title">
               <h3 class="s-title__header">seo <span>text</span></h3>
-              <div class="s-title__sub-text">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
+              <div class="s-title__sub-text s-title__sub-text--seo">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-s">dfg
+    <section class="about-s">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-6">
+          <div class="col-lg-6 offset-lg-6 col-sm-6 col-xs-12">
             <div class="about">
               <div class="s-title">
                 <h3 class="s-title__header">кто <span>мы</span></h3>
@@ -187,9 +221,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6 col-xs-12">
             <div class="about about--mrgn">
               <div class="s-title">
                 <h3 class="s-title__header">что <span>можем</span></h3>
@@ -213,18 +245,20 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="price">
-                <div class="price__item"><span class="price__money">650 рублей</span><span class="price__line">/</span><span class="price__time">час</span>
-                  <div class="price__sub">Работа специалиста</div>
+              <div class="price-wrap">
+                <div class="price">
+                  <div class="price__item"><span class="price__money">650 рублей</span><span class="price__line">/</span><span class="price__time">час</span>
+                    <div class="price__sub">Работа специалиста</div>
+                  </div>
                 </div>
-              </div>
-              <div class="price">
-                <div class="price__item"><span class="price__money">24</span><span class="price__line">/</span><span class="price__time">7</span></div>
-                <div class="price__sub">мы на связи</div>
-              </div>
-              <div class="price">
-                <div class="price__item"><span class="price__money">7 </span><span class="price__time">лет</span>
-                  <div class="price__sub">опыт работы</div>
+                <div class="price">
+                  <div class="price__item"><span class="price__money">24</span><span class="price__line">/</span><span class="price__time">7</span></div>
+                  <div class="price__sub">мы на связи</div>
+                </div>
+                <div class="price">
+                  <div class="price__item"><span class="price__money">7 </span><span class="price__time">лет</span>
+                    <div class="price__sub">опыт работы</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -271,8 +305,8 @@
     <section class="s-our-proj"><img class="proj-decor proj-decor-1" src="img/proj-decor-1.png" alt=""><img class="proj-decor proj-decor-2" src="img/proj-decor-2.png" alt=""><img class="proj-decor proj-decor-3" src="img/proj-decor-3.png" alt=""><img class="proj-decor proj-decor-4" src="img/proj-decor-4.png" alt="">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-6">
-            <div class="s-title">
+          <div class="col-lg-6 offset-lg-6 col-md-12">
+            <div class="s-title s-our-proj__title">
               <h3 class="s-title__header">Продвигаем <span>ваш проект </span></h3>
               <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
             </div>
@@ -282,7 +316,7 @@
       <section class="s-steps">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 offset-md-2">
+            <div class="col-lg-6 offset-lg-2 col-md-12">
               <div class="s-title">
                 <h3 class="s-title__header">Этапы <span>Работы</span></h3>
                 <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
@@ -290,7 +324,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-10 offset-md-2">
+            <div class="col-lg-10 offset-lg-2 col-md-12">
               <div class="step">
                 <div class="step__item">
                   <div class="step__nmbr">1 </div>
@@ -321,38 +355,108 @@
     <section class="s-reviews">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-10">
             <div class="s-title">
-              <h3 class="s-title__header">Отзывы<span>клиентов</span></h3>
-              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+              <h3 class="s-title__header">Отзывы <span>клиентов</span></h3>
+              <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="reviews">
-              <div class="reviews__header">
-                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+            <div class="reviews-sl-desktop-wrap">
+              <div class="reviews-sl">
+                <div class="reviews-sl__slide">
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                </div>
+                <div class="reviews-sl__slide">
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                </div>
               </div>
-              <div class="reviews__author">Анастасия Сокол</div>
-              <div class="reviews__data">комментарий от 7.11.20.17</div>
-              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
             </div>
-            <div class="reviews">
-              <div class="reviews__header">
-                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-12">
+            <div class="reviews-sl-mobile-wrap">
+              <div class="reviews-sl-mobile">
+                <div class="reviews-sl__slide-m">
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                </div>
+                <div class="reviews-sl__slide-m">
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                </div>
+                <div class="reviews-sl__slide-m">
+                  <div class="reviews">
+                    <div class="reviews__header">
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
+                    </div>
+                    <div class="reviews__author">Анастасия Сокол</div>
+                    <div class="reviews__data">комментарий от 7.11.20.17</div>
+                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
+                  </div>
+                </div>
               </div>
-              <div class="reviews__author">Анастасия Сокол</div>
-              <div class="reviews__data">комментарий от 7.11.20.17</div>
-              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
-            </div>
-            <div class="reviews">
-              <div class="reviews__header">
-                <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
-              </div>
-              <div class="reviews__author">Анастасия Сокол</div>
-              <div class="reviews__data">комментарий от 7.11.20.17</div>
-              <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
             </div>
           </div>
         </div>
@@ -364,7 +468,7 @@
           <div class="col-md-12">
             <div class="s-title">
               <h3 class="s-title__header">seo <span>text</span></h3>
-              <div class="s-title__sub-text">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
+              <div class="s-title__sub-text">eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -375,14 +479,20 @@
         <div class="row">
           <div class="col-md-6">
             <div class="s-title">
-              <h3 class="s-title__header">о<span>компании</span></h3>
+              <h3 class="s-title__header">о <span>компании</span></h3>
               <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="sertificate"><img class="sertificate__item" src="img/company-1.jpg" alt=""><img class="sertificate__item" src="img/company-2.jpg" alt=""><img class="sertificate__item" src="img/company-3.jpg" alt=""><img class="sertificate__item" src="img/company-4.jpg" alt=""></div>
+            <div class="sertificate">
+              <div class="sertificate__item"><img src="img/company-1.jpg" alt=""></div>
+              <div class="sertificate__item"><img src="img/company-2.jpg" alt=""></div>
+              <div class="sertificate__item"><img src="img/company-3.jpg" alt=""></div>
+              <div class="sertificate__item"><img src="img/company-4.jpg" alt=""></div>
+              <div class="sertificate__item"><img src="img/company-4.jpg" alt=""></div>
+            </div>
           </div>
         </div>
       </div>
@@ -390,17 +500,20 @@
     <section class="s-team">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-2">
+          <div class="col-md-6 col-sm-6">
             <div class="team">
               <div class="team__item"><img src="img/team.jpg" alt="team"></div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6">
             <div class="s-title">
-              <h3 class="s-title__header">Наша<span>команда</span></h3>
+              <h3 class="s-title__header">Наша <span>команда</span></h3>
               <div class="s-title__sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
-            </div><a class="btn btn--blue btn--team" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i><span>Посмотреть всю команду</span></a>
+            </div>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 offset-lg-6 col-md-12"><a class="btn btn--blue btn--team" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i><span>Посмотреть всю команду</span></a></div>
         </div>
       </div>
     </section>
@@ -414,7 +527,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <form action="#" method="post">
               <div class="form-online">
                 <div class="form-online__header">
@@ -439,22 +552,37 @@
                 <div class="form-online__budget budget">
                   <div class="budget__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет	</div>
                   <div class="budget__content">
-                    <div class="budget__start">от 100 000 <span>руб.</span></div>
-                    <div class="budget__end">свыше 5 млн <span>Руб.</span></div>
-                  </div><img class="budget__line" src="img/online-line.png" alt="">
+                    <div class="budget__start">от 100 000 <span>руб</span></div>
+                    <div class="budget__end">от 999 999 999<span>руб</span></div>
+                  </div>
+                  <div id="slider-range-online"></div>
+                </div>
+                <div class="form-online__budget-m budget-m">
+                  <div class="budget-m__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет</div>
+                  <div class="budget-m__start"><span>от</span>
+                    <input class="budget-m__input" type="text" placeholder="0 руб">
+                  </div>
+                  <div class="budget-m__end"><span>до</span>
+                    <input class="budget-m__input" type="text" placeholder="999 999 999 руб">
+                  </div>
                 </div>
                 <div class="form-online__area-wrap">
                   <div class="form-online__area-header">
-                    <label for=""><i class="fa fa-comment-o" aria-hidden="true"></i> Коментарий</label>
-                  </div>
-                  <div class="form-online__area-content">
+                    <label for=""><i class="fa fa-comment" aria-hidden="true"></i> Коментарий</label>
                     <textarea name="" cols="30" rows="10" placeholder="Пара слов"></textarea>
                   </div>
                 </div>
-                <input type="checkbox">
-                <input type="file"><span class="text-checkbox">
-                   Я согласен<span>с условиями оферты</span></span><span class="document"><i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ</span>
-                <input class="btn btn-form-online btn--gradient" type="submit" value="Отправить">
+                <div class="form-online__chk-file-wrap">
+                  <input class="checked" type="checkbox" id="online-chk">
+                  <label class="online-checked-wrap" for="online-chk"><i class="fa fa-square-o online-i-ch-1" id="online-checked" aria-hidden="true"></i>
+<i class="fa fa-check online-i-ch-2"  aria-hidden="true"></i><span class="text-checkbox">
+                       Я согласен с <a href="#" target="_blank">условиями оферты</a></span>
+                  </label>
+                  <label class="online-file"><span class="document"><i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ</span>
+                    <input class="file" type="file">
+                  </label>
+                </div>
+                <button class="btn btn-form-online btn--gradient" type="submit"><i class="fa fa-check" aria-hidden="true"></i>  Отправить</button>
               </div>
             </form>
           </div>
@@ -467,7 +595,7 @@
     <section class="s-partners">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-10 offset-md-1">
             <h3 class="s-title__header">наши <span>компитенции</span></h3>
             <div class="partners owl-carousel">
               <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
@@ -483,16 +611,14 @@
         </div>
       </div>
     </section>
-    <footer class="s-footer">
+    <footer class="s-footer"><a class="btn-to-top" href="#" id="scroll-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
       <div class="container">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-xl-1 col-md-1">
             <div class="footer-logo"><img src="img/logo-footer.png" alt="logo-img"></div>
-            <div class="social"><span class="social__header">Рассказать друзьям:</span><i class="fa fa-facebook-square" aria-hidden="true"></i>
-<i class="fa fa-vk" aria-hidden="true"></i>
-            </div>
+            <div class="social"><span class="social__header">Рассказать друзьям:</span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
           </div>
-          <div class="col-md-5">
+          <div class="col-xl-5 col-md-10">
             <div class="footer-nav">
               <div class="footer-nav__item">
                 <div class="footer-nav__header">Название страницы</div><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a><a class="footer-nav__link" href="#"> Раздел 1</a>
@@ -511,7 +637,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xl-6 col-md-12">
             <div class="download">
               <div class="download__header">материалы для скачивания</div>
               <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="">Типовой договор</a></div>
@@ -529,8 +655,8 @@
               </div>
               <div class="social-icon clearfix"><a class="social-icon__link" href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-google" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
             </div>
-            <form action="#" method="post">
-              <div class="form-online">
+            <div class="form-online">
+              <form action="#" method="post">
                 <div class="form-online__header">
                   Заполните форму <br />и мы вяжимся с вами</div>
                 <div class="form-online__item-wrap">
@@ -550,8 +676,8 @@
                     <input class="form-online__input form-online__input--border" type="text" placeholder="mail" id="email-online">
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -561,6 +687,7 @@
         </div>
       </div>
     </footer>
+    <footer class="s-footer-m"></footer>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </body>
