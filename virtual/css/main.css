@@ -25,12 +25,23 @@ body {
   color: #fff; }
 
 .header {
-  background-image: url(../img/header-bgr.png);
+  background: url(../img/iskru.png) top center, url(../img/h-bgr-1.png);
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 10px;
-  position: relative;
-  z-index: 2; }
+  position: relative; }
+  .header:after {
+    height: 267px;
+    width: 100%;
+    background: #0b1838;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    -webkit-transform: skewY(-11deg);
+        -ms-transform: skewY(-11deg);
+            transform: skewY(-11deg);
+    opacity: 0.9; }
   @media (max-width: 767px) {
     .header {
       background-image: url(../img/header-bgr-768.png);
@@ -226,6 +237,9 @@ body {
   background-image: -webkit-linear-gradient(left, #ff3333, #ff3399);
   background-image: -o-linear-gradient(left, #ff3333, #ff3399);
   background-image: linear-gradient(to right, #ff3333, #ff3399); }
+
+input:focus, textarea:focus, img:focus {
+  outline: none; }
 
 .btn {
   text-decoration: none; }
@@ -505,7 +519,17 @@ body {
     position: relative; }
   .portfolio-wrap__right {
     background-color: #eee;
-    width: 855px; }
+    width: 855px;
+    overflow: hidden; }
+    .portfolio-wrap__right img {
+      height: 100%;
+      max-width: 100%; }
+  .portfolio-wrap .portfolio__btn {
+    -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0; }
+
+.btn:focus {
+  outline: none; }
 
 .portfolio {
   background-color: #fff;
@@ -677,8 +701,8 @@ body {
   position: relative; }
   .services-container:before {
     content: " ";
-    width: 590px;
-    height: 591px;
+    width: 711px;
+    height: 638px;
     background-image: url(../img/rocker-pic.png);
     background-repeat: no-repeat;
     position: absolute;
@@ -1274,7 +1298,7 @@ body {
         top: -60px; } }
   .s-reviews:after {
     content: " ";
-    top: -338px;
+    top: -309px;
     position: absolute;
     left: -webkit-calc(50% - 170px);
     left: calc(50% - 170px);
@@ -1557,6 +1581,9 @@ body {
 
 .s-online {
   background-image: url(../img/zayavka.png); }
+  @media (max-width: 768px) {
+    .s-online {
+      padding-bottom: 30px; } }
   @media (max-width: 580px) {
     .s-online .s-title {
       text-align: center; } }
@@ -1601,7 +1628,8 @@ body {
         display: -ms-inline-flexbox;
         display: inline-flex; } }
     .form-online__chk-file-wrap .fa {
-      color: #8EC41F; }
+      color: #8EC41F;
+      vertical-align: baseline; }
     .form-online__chk-file-wrap a {
       color: #3334F4; }
   .form-online__item-wrap {
@@ -1637,7 +1665,8 @@ body {
       .form-online__input-item {
         text-align: left; } }
     .form-online__input-item .fa {
-      font-size: 16px; }
+      font-size: 16px;
+      width: 18px; }
   .form-online__area-header {
     margin: 5px 0; }
     @media (max-width: 580px) {
@@ -1649,7 +1678,8 @@ body {
     padding: 12px 15px 10px 17px;
     height: 95px;
     -webkit-border-radius: 15px;
-            border-radius: 15px; }
+            border-radius: 15px;
+    margin-top: 5px; }
     @media (max-width: 580px) {
       .form-online__area-header textarea {
         width: 160px;
@@ -1672,6 +1702,8 @@ body {
     position: absolute;
     left: 0;
     top: -1px; }
+  .form-online__chk-file-wrap > div {
+    margin-top: 7px; }
 
 .budget {
   margin-top: 21px; }
@@ -1752,7 +1784,7 @@ body {
     margin-top: 5px; }
 
 .online-checked-wrap {
-  margin-top: 7px;
+  margin-top: 15px;
   position: relative; }
 
 .online-file {
@@ -1774,6 +1806,8 @@ body {
             transform: translateY(-50%);
     position: absolute;
     background: url(../img/onl-slid-btn-1.png); }
+    #slider-range-online .ui-slider-handle.ui-state-default.ui-corner-all:focus {
+      outline: none; }
 
 .budget-m {
   display: none; }
@@ -1814,7 +1848,8 @@ body {
       right: 0; } }
 
 .partners__img {
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 .slick-slider button {
   background-color: transparent;
@@ -1869,9 +1904,14 @@ body {
         margin-left: 0; }
   .s-footer .form-online__header {
     margin-top: 20px; }
-  @media (max-width: 768px) {
-    .s-footer .form-online {
-      display: none; } }
+  .s-footer .form-online {
+    margin-top: -50px; }
+    @media (max-width: 1200px) {
+      .s-footer .form-online {
+        margin-top: 0; } }
+    @media (max-width: 768px) {
+      .s-footer .form-online {
+        display: none; } }
 
 .footer-logo img {
   max-width: 100%;

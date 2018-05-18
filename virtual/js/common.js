@@ -25,6 +25,7 @@ $(function(){
 		autoplay:true,
 		fade: true,
 		autoplaySpeed: 15000,
+		draggable:false,
 	});
 	$('#scroll-to-top').click(function () {
         $('body,html').animate({
@@ -39,6 +40,8 @@ $(function(){
 		speed: 500,
 		arrows:true,
 		fade: false,
+		draggable:false,
+
 		slidesToShow:4,
 		slidesToScroll:1,
 		prevArrow: '<button id="prev" class="prev prev--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
@@ -83,6 +86,7 @@ $(function(){
 		autoplaySpeed: 15000,
 		speed: 500,
 		arrows:true,
+		draggable:false,
 		fade: true,
 		prevArrow: '<button id="prev" class="prev prev--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
 		nextArrow: '<button id="next" class="next next--bgr-none" type="button" class="btn btn-juliet"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
@@ -91,10 +95,11 @@ $(function(){
 		infinite: true,
 		autoplaySpeed: 800,
 		speed: 500,
+		draggable:false,
+		draggable:false,
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		arrows:true,
-		draggable: false,
 		swipe: false,
 		touchMove: false,
 		prevArrow: '<button id="prev" class="prev prev--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
@@ -111,8 +116,6 @@ $(function(){
 		},
 		]
 	});
-
-
 
 	$('.partners').slick({
 		dots: true,
@@ -151,6 +154,7 @@ $(function(){
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		centerPadding: '20px',
+		draggable:false,
 		speed: 500,
 		arrows:true,
 		prevArrow: '<button id="prev" class="prev prev--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i> </button>',
