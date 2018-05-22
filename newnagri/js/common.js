@@ -110,7 +110,7 @@ $('.partners__logo-top').owlCarousel({
 
 
 	$( "#amount" ).val( "" + $( "#slider-range-min" ).slider( "value" ) );
-	$( "#slider-range-min" ).slider('disable');
+	$( "#slider-range-min" ).slider('');
 
 
 
