@@ -30,9 +30,11 @@ $(function(){
         $('.reviews__img').hover(function(){
             $(this).parent().css('overflow' , 'visible');
         })
-          $('.reviews__img').mouseleave(function(){
+        $('.reviews__img').mouseleave(function(){
             $(this).parent().css('overflow' , 'hidden');
-        })     
+        })  
+
+       
 
         $("#slider-range-online" ).slider({
         	range: true,
@@ -144,7 +146,7 @@ $(function(){
         	nextArrow: '<button id="next" class="next next--bgr-none" type="button" class="btn btn-juliet"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
         	responsive: [
         	{
-        		breakpoint: 670,
+        		breakpoint: 767,
         		settings: {
         			slidesToShow: 1,
         			slidesToScroll: 1,
