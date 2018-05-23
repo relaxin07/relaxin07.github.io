@@ -601,7 +601,8 @@ input:focus, textarea:focus, img:focus {
         display: none; } }
   .portfolio-b .slick-slider button {
     position: absolute;
-    z-index: 99; }
+    z-index: 99;
+    cursor: pointer; }
     .portfolio-b .slick-slider button .fa {
       color: #fff; }
   .portfolio-b .slick-slider .prev {
@@ -872,7 +873,8 @@ input:focus, textarea:focus, img:focus {
   padding-top: 250px;
   padding-bottom: 200px;
   background-position: top center;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: -250px; }
   @media (max-width: 992px) {
     .about-s {
       background: none;
@@ -1429,7 +1431,8 @@ input:focus, textarea:focus, img:focus {
         display: none; } }
   .s-reviews .slick-slider button {
     position: absolute;
-    z-index: 99; }
+    z-index: 99;
+    cursor: pointer; }
     .s-reviews .slick-slider button .fa {
       color: #fff; }
   .s-reviews .slick-slider .prev {
@@ -1507,9 +1510,9 @@ input:focus, textarea:focus, img:focus {
         padding-right: 10px; } }
   .reviews__img {
     margin: 0 auto;
-    -webkit-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
     height: 255px;
     max-width: 255px; }
     .reviews__img:hover {
@@ -1524,15 +1527,13 @@ input:focus, textarea:focus, img:focus {
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease; }
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
     @media (max-width: 767px) {
       .reviews__img-wrap {
         width: 240px;
         height: 240px; } }
-    .reviews__img-wrap:hover {
-      overflow: visible; }
   .reviews__loupe {
     position: absolute;
     color: #08214a;
@@ -1599,6 +1600,7 @@ input:focus, textarea:focus, img:focus {
       padding-top: 50px; } }
   .s-company .slick-slider button {
     position: absolute;
+    cursor: pointer;
     z-index: 99; }
     .s-company .slick-slider button .fa {
       color: #fff; }
@@ -1945,6 +1947,7 @@ input:focus, textarea:focus, img:focus {
   margin: 20px 0;
   height: 3px; }
   #slider-range-online .ui-slider-handle.ui-state-default.ui-corner-all {
+    cursor: pointer;
     width: 24px;
     height: 24px;
     display: inline-block;

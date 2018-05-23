@@ -27,6 +27,13 @@ $(function(){
             });
 
 
+        $('.reviews__img').hover(function(){
+            $(this).parent().css('overflow' , 'visible');
+        })
+          $('.reviews__img').mouseleave(function(){
+            $(this).parent().css('overflow' , 'hidden');
+        })     
+
         $("#slider-range-online" ).slider({
         	range: true,
         	min: 100000,
