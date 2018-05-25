@@ -76,77 +76,77 @@
     </header>
     <div id="overlay"></div>
     <div class="modal_form" id="vizit-mod">
-      <!--.form-online
-      .s-title
-      		h3.s-title__header быстрая 
-      			span заявка
-      form(action="#" method="post")
-      		
-      			.form-online__header Заполните форму <br />
-      				| и мы свяжимся с вами!
-      
-      			.form-online__item-wrap
-      				.form-online__input-item
-      					label 
-      						<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
-      						span Ваше имя
-      					input(type="text" placeholder="Андрей" id="name-online").form-online__input
-      
-      				.form-online__input-item
-      					label 
-      						<i class="fa fa-phone" aria-hidden="true"></i> 
-      						span Телефон
-      					input(type="text" placeholder="+7" id="phone-online").form-online__input
-      				.form-online__input-item
-      					label 
-      						<i class="fa fa-envelope" aria-hidden="true"></i> 
-      						span E-mail
-      					input(type="text" placeholder="mail" id="email-online").form-online__input
-      
-      			.form-online__budget.budget
-      				.budget__header <i class="fa fa-rub" aria-hidden="true"></i> Бюджет	
-      				.budget__content
-      						.budget__start от 100 000 
-      							span руб.
-      						.budget__end от 999 999 999
-      							span руб.
-      				#slider-range-online
-      			.form-online__budget-m.budget-m
-      				.budget-m__header <i class="fa fa-rub" aria-hidden="true"></i> Бюджет
-      				.budget-m__start
-      					span от
-      					input(type="text" placeholder="0 руб").budget-m__input
-      				.budget-m__end
-      					span до
-      					input(type="text" placeholder="999 999 999 руб").budget-m__input
-      			.form-online__area-wrap
-      				.form-online__area-header
-      					label(for="") <i class="fa fa-comment" aria-hidden="true"></i> Коментарий
-      					textarea(name="", cols="30", rows="10" placeholder="Пара слов")
-      			.form-online__chk-file-wrap
-      				div
-      					input(type="checkbox" id="online-chk" class="checked")
-      					label(class="online-checked-wrap" for="online-chk")
-      						<i class="fa fa-square-o online-i-ch-1" id="online-checked" aria-hidden="true"></i>
-      						<i class="fa fa-check online-i-ch-2"  aria-hidden="true"></i>
-      					span.text-checkbox 
-      							| Я согласен с 
-      							a(href="#" target="_blank") условиями оферты
-      				div
-      					label(class="online-file")
-      						
-      						span.document <i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ
-      						input(type="file" class="file")
-      
-      			button(type="submit" ).btn.btn-form-online.btn--gradient <i class="fa fa-check" aria-hidden="true"></i>  Отправить
-      -->
+      <div class="form-online">
+        <div class="s-title">
+          <h3 class="s-title__header">быстрая <span>заявка</span></h3>
+        </div>
+        <form action="#" method="post">
+          <div class="form-online__header">
+            Заполните форму <br />и мы свяжемся с вами!</div>
+          <div class="form-online__item-wrap">
+            <div class="form-online__input-item">
+              <label>
+                 <i class="fa fa-user-circle-o" aria-hidden="true"></i> <span>Ваше имя</span></label>
+              <input class="form-online__input" type="text" placeholder="Андрей" id="name-online-m">
+            </div>
+            <div class="form-online__input-item">
+              <label>
+                 <i class="fa fa-phone" aria-hidden="true"></i> <span>Телефон</span></label>
+              <input class="form-online__input" type="text" placeholder="+7" id="phone-online-m">
+            </div>
+            <div class="form-online__input-item">
+              <label>
+                 <i class="fa fa-envelope" aria-hidden="true"></i> <span>E-mail</span></label>
+              <input class="form-online__input" type="text" placeholder="mail" id="email-online-m">
+            </div>
+          </div>
+          <div class="form-online__budget budget">
+            <div class="budget__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет	</div>
+            <div class="budget__content">
+              <div class="budget__start">от 100 000 <span>руб.</span></div>
+              <div class="budget__end">ДО 2 968 762 <span>руб.</span></div>
+            </div>
+            <div class="slider-range-online"></div>
+          </div>
+          <div class="form-online__budget-m budget-m">
+            <div class="budget-m__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет</div>
+            <div class="budget-m__start"><span>от</span>
+              <input class="budget-m__input" type="text" placeholder="0 руб">
+            </div>
+            <div class="budget-m__end"><span>до</span>
+              <input class="budget-m__input" type="text" placeholder="999 999 999 руб">
+            </div>
+          </div>
+          <div class="form-online__area-wrap">
+            <div class="form-online__area-header">
+              <label for=""><i class="fa fa-comment" aria-hidden="true"></i> Коментарий</label>
+              <textarea name="" cols="30" rows="10" placeholder="Пара слов"></textarea>
+            </div>
+          </div>
+          <div class="form-online__chk-file-wrap">
+            <div>
+              <input class="checked" type="checkbox" id="online-chk-1">
+              <label class="online-checked-wrap" for="online-chk-1"><i class="fa fa-square-o online-i-ch-1" id="online-checked-m" aria-hidden="true"></i>
+<i class="fa fa-check online-i-ch-2"  aria-hidden="true"></i>
+              </label><span class="text-checkbox">
+                 Я согласен с <a href="#" target="_blank">условиями оферты</a></span>
+            </div>
+            <div>
+              <label class="online-file"><span class="document"><i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ</span>
+                <input class="file" type="file">
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-form-online btn--gradient" type="submit"><i class="fa fa-check" aria-hidden="true"></i>  Отправить</button>
+        </form>
+      </div>
     </div>
     <section class="portfolio-b">
       <div class="container portfolio-c">
         <div class="row">
           <div class="col-xl-6 offset-xl-0 col-md-11 offset-md-1">
-            <div class="s-title">
-              <h3 class="s-title__header">портфолио</h3>
+            <div class="s-title"><a href="">
+                <h3 class="s-title__header">портфолио</h3></a>
               <div class="s-title__sub-text"> Мы разрабатываем до 10 проектов каждый год вот уже более пяти лет подряд. Огромный опыт позволяет нам применять самые актуальные и проверенные временем решения.</div>
             </div>
           </div>
@@ -159,14 +159,14 @@
                   <div class="portfolio__text">Очень интересное описание этой работы, в большое количество строк, устал писать так что дальше будет рыба Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut </div><a class="portfolio__btn btn btn--green" href="#">Подробнее</a>
                 </div>
               </div>
-              <div class="portfolio-wrap__right"><img src="img/port-big.jpg" alt=""></div>
+              <div class="portfolio-wrap__right"><img src="img/port-main.jpg" alt=""></div>
             </div>
           </div>
           <div class="col-md-12">
             <div class="portfolio-sl">
               <div class="portfolio-slider__slide">
                 <div class="portfolio portfolio--border-r">
-                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <div class="portfolio__img"><img src="img/port-sm-1.jpg" alt=""></div>
                   <h4 class="portfolio__header">Работа с хорошим названием</h4>
                   <div class="portfolio__data">11.11.17</div>
                   <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--green" href="">подробнее</a>
@@ -174,7 +174,7 @@
               </div>
               <div class="portfolio-slider__slide">
                 <div class="portfolio portfolio--border-r">
-                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <div class="portfolio__img"><img src="img/port-sm-2-.jpg" alt=""></div>
                   <h4 class="portfolio__header">Работа с хорошим названием</h4>
                   <div class="portfolio__data">11.11.17</div>
                   <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
@@ -182,7 +182,7 @@
               </div>
               <div class="portfolio-slider__slide">
                 <div class="portfolio portfolio--border-r">
-                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <div class="portfolio__img"><img src="img/port-sm-3.jpg" alt=""></div>
                   <h4 class="portfolio__header">Работа с хорошим названием</h4>
                   <div class="portfolio__data">11.11.17</div>
                   <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--blue" href="">подробнее</a>
@@ -190,15 +190,7 @@
               </div>
               <div class="portfolio-slider__slide">
                 <div class="portfolio portfolio--border-r">
-                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
-                  <h4 class="portfolio__header">Работа с хорошим названием</h4>
-                  <div class="portfolio__data">11.11.17</div>
-                  <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
-                </div>
-              </div>
-              <div class="portfolio-slider__slide">
-                <div class="portfolio portfolio--border-r">
-                  <div class="portfolio__img"><img src="img/portfolio-sm.png" alt=""></div>
+                  <div class="portfolio__img"><img src="img/port-sm-4.jpg" alt=""></div>
                   <h4 class="portfolio__header">Работа с хорошим названием</h4>
                   <div class="portfolio__data">11.11.17</div>
                   <div class="portfolio__text portfolio__text--sub">очень интересное описание этой заботы , в две строки</div><a class="portfolio__btn btn btn--pink" href="">подробнее</a>
@@ -217,8 +209,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-6 col-10">
-              <div class="s-title">
-                <h3 class="s-title__header">наши <span>услуги</span></h3>
+              <div class="s-title"><a href="#">
+                  <h3 class="s-title__header">наши <span>услуги</span></h3></a>
                 <div class="s-title__sub-text">Профессиональная разработка VR/AR приложений, игр и авторского 3D контента, а также погружение вашего бизнеса в виртуальную среду и разработка уникальных квестов виртуальной реальности с поддержкой видео в 360 градусов</div>
               </div>
             </div>
@@ -228,29 +220,51 @@
               <div class="service">
                 <div class="service__icon-main"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
                 <div class="service__title">ДЛЯ БИЗНЕСА</div>
-                <div class="service__item"><i class="fa fa-simplybuilt" aria-hidden="true"></i><span>Симуляторы</span></div>
-                <div class="service__item"><i class="fa fa-street-view" aria-hidden="true"></i><span>Тренажоры</span></div>
-                <div class="service__item"><i class="fa fa-bicycle" aria-hidden="true"></i><span>Атракционы</span></div>
-                <div class="service__item"><i class="fa fa-home" aria-hidden="true"></i><span>Дизайн интергера</span></div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-simplybuilt" aria-hidden="true"></i></div><span>Симуляторы</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-street-view" aria-hidden="true"></i></div><span>Тренажоры</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-bicycle" aria-hidden="true"></i></div><span>Атракционы</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-home" aria-hidden="true"></i></div><span>Дизайн интергера</span>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <div class="service">
                 <div class="service__icon-main"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
                 <div class="service__title">Приложения</div>
-                <div class="service__item"><i class="fa fa-th-large" aria-hidden="true"></i><span>Контент</span></div>
-                <div class="service__item"><i class="fa fa-space-shuttle" aria-hidden="true"></i><span>Виртуальная реальность</span></div>
-                <div class="service__item"><i class="fa fa-android" aria-hidden="true"></i><span>Андроид</span></div>
-                <div class="service__item"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Игры</span></div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-th-large" aria-hidden="true"></i></div><span>Контент</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-space-shuttle" aria-hidden="true"></i></div><span>Виртуальная реальность</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-android" aria-hidden="true"></i></div><span>Андроид</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-gamepad" aria-hidden="true"></i></div><span>Игры</span>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <div class="service">
                 <div class="service__icon-main"><i class="fa fa-cogs" aria-hidden="true"></i></div>
-                <div class="service__title"> Для устройсв</div>
-                <div class="service__item"><i class="fa fa-bomb" aria-hidden="true"></i> <span>Oculus</span></div>
-                <div class="service__item"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Gear VR</span></div>
-                <div class="service__item"><i class="fa fa-space-shuttle" aria-hidden="true"></i><span>HTC</span></div>
+                <div class="service__title"> Для устройств </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-bomb" aria-hidden="true"></i> </div><span>Oculus</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-heartbeat" aria-hidden="true"></i> </div><span>Gear VR</span>
+                </div>
+                <div class="service__item">
+                  <div class="service__icon"><i class="fa fa-space-shuttle" aria-hidden="true"></i></div><span>HTC</span>
+                </div>
               </div>
             </div>
           </div>
@@ -263,7 +277,25 @@
           <div class="col-md-12">
             <div class="s-title">
               <h3 class="s-title__header">seo <span>text</span></h3>
-              <div class="s-title__sub-text s-title__sub-text--seo">Хотите заказать разработку приложения с элементами виртуальной реальности?Ищите опытного исполнителя, но не хотите переплачивать? Тогда «VR Apps» – это то, что вам нужно. С 2014 года компания занимается VR AR производством. За это время сформирована профессиональная команда единомышленников. В московском рейтинге Ruward наша VR студия занимает 10 место. Успешное VR агентство входит в ТОП-200 лучших компаний России, которые продуцируют мобильные приложения. Решение нестандартных задач. В комплекс услуг студии разработки VR AR приложений входит:- разработка проекта (от документации и сценария до логики и механики);- проведение тестов;- размещение проекта в маркете или помощь с установкой;- сетевое продвижение продукта;- полная техническая поддержка.</div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <div class="s-title__sub-text s-title__sub-text--seo">
+                <pre>Хотите заказать разработку приложения с элементами виртуальной реальности?
+Ищите опытного исполнителя, но не хотите переплачивать?
+Тогда «VR Apps» – это то, что вам нужно.
+
+С 2014 года компания занимается VR AR производством. За это время сформирована
+профессиональная команда единомышленников. В московском рейтинге Ruward наша VR
+студия занимает 10 место. Успешное VR агентство входит в ТОП-200 лучших компаний России,
+которые продуцируют мобильные приложения.
+
+Решение нестандартных задач
+
+В комплекс услуг студии разработки VR AR приложений входит:
+- разработка проекта (от документации и сценария до логики и механики);
+- проведение тестов;
+- размещение проекта в маркете или помощь с установкой;
+- сетевое продвижение продукта;
+- полная техническая поддержка.</pre>
+              </div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -296,10 +328,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="s-title">
-                <h3 class="s-title__header">сроки и <span>стоимость</span></h3>
-                <div class="s-title__sub-text">Мы экономим на аренде дорогого офиса для того, чтобы предложить вам комфортные цены. Мы берем на работу победителей олимпиад по спортивному программированию для того, чтобы предложить вам лучшие сроки.</div>
-              </div>
+              <div class="s-title"><a href="">
+                  <h3 class="s-title__header">сроки и <span>стоимость</span></h3>
+                  <div class="s-title__sub-text">Мы экономим на аренде дорогого офиса для того, чтобы предложить вам комфортные цены. Мы берем на работу победителей олимпиад по спортивному программированию для того, чтобы предложить вам лучшие сроки.</div></a></div>
             </div>
           </div>
           <div class="row">
@@ -338,8 +369,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-5 col-md-7 col-12">
-              <div class="s-title">
-                <h3 class="s-title__header">Ar <span>разработка</span></h3>
+              <div class="s-title"><a href="#">
+                  <h3 class="s-title__header">Ar <span>разработка</span></h3></a>
                 <div class="s-title__sub-text">Оживающие раскраски и паззлы, виртуальные экскурсии и дизайн интерьера, печатная продукция и запоминающаяся реклама, красивая презентация или витрина магазина - небольшой пример использования технологии дополненной реальности</div>
               </div>
             </div>
@@ -350,8 +381,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-6 offset-xl-6 col-md-7 col-12">
-              <div class="s-title">
-                <h3 class="s-title__header">vr <span>контент</span></h3>
+              <div class="s-title"><a href="#">
+                  <h3 class="s-title__header">vr <span>контент</span></h3></a>
                 <div class="s-title__sub-text">Мы создаем 3D персонажей и монстров любой сложности независимо от конечной цели, также разрабатываем игровые локации и объекты специально заточенные под виртуальную реальность, включая все декорации и эффекты.</div>
               </div>
             </div>
@@ -363,8 +394,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-12">
-            <div class="s-title">
-              <h3 class="s-title__header">vr <span>разработка</span></h3>
+            <div class="s-title"><a href="#">
+                <h3 class="s-title__header">vr <span>разработка</span></h3></a>
               <div class="s-title__sub-text">Мы знаем особенности процесса разработки под VR как с технической точки зрения, так и с позиции маркетинга, а значит нам известно не только как сделать дешевле и круче, но и как сделать так, чтобы вы потом могли на будущем проекте заработать больше и быстрей.</div>
             </div>
           </div>
@@ -375,8 +406,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-6 col-md-12">
-            <div class="s-title s-our-proj__title">
-              <h3 class="s-title__header">Продвигаем <span>ваш проект </span></h3>
+            <div class="s-title s-our-proj__title"><a href="">
+                <h3 class="s-title__header">Продвигаем <span>ваш проект </span></h3></a>
               <div class="s-title__sub-text">Каждый проект нуждается в продвижении, мы решаем любые маркетинговые задачи как в интернете, так и за его пределами. Собственный отдел маркетинга позволяет нам предлагать вам целевое продвижение, ведь если разработчики и маркетологи являются одной командой - на их пути не будет преград.</div>
             </div>
           </div>
@@ -386,8 +417,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 offset-lg-2 col-md-12">
-              <div class="s-title">
-                <h3 class="s-title__header">Этапы <span>Работы</span></h3>
+              <div class="s-title"><a href="">
+                  <h3 class="s-title__header">Этапы <span>Работы</span></h3></a>
                 <div class="s-title__sub-text">Каждый этап разработки сопровождают не только специалисты в своей области, но и гейм-дизайнер и проект менеджер, согласовывая все детали до мелочей с заказчиком или его доверенным лицом, это позволяет получить именно тот продукт, который вы заказывали.</div>
               </div>
             </div>
@@ -425,8 +456,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12">
-            <div class="s-title">
-              <h3 class="s-title__header">Отзывы <span>клиентов</span></h3>
+            <div class="s-title"><a href="#">
+                <h3 class="s-title__header">Отзывы <span>клиентов</span></h3></a>
               <div class="s-title__sub-text">
                 <p>Среди наших клиентов Министерство здравоохранения Российской Федерации и Роскосмос, Волонтеры победы и Администрация президента. Нам доверяют самые сложные проекты.</p>
                 <p>Мы работаем как с частными клиентами так и с крупным бизнесом. За время нашей работы мы получили более пятидесяти положительных отзывов и благодарностей</p>
@@ -438,7 +469,7 @@
                   <div class="reviews">
                     <div class="reviews__header">
                       <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-2.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-2.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="reviews__author">Измайлов В.О</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
@@ -447,7 +478,7 @@
                   <div class="reviews">
                     <div class="reviews__header">
                       <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-3.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-3.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="reviews__author">Владимир Ткачев</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
@@ -455,19 +486,19 @@
                   </div>
                   <div class="reviews">
                     <div class="reviews__header">
-                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-2.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-1.jpg" alt=""></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-2.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
-                    <div class="reviews__author">Измайлов В.О</div>
+                    <div class="reviews__author">Мелов А.А</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
-                    <div class="reviews__text"> Проект “FunSpy” и лично Измайлов В.О. благодарят студию по разработке игр виртуальной реальности “VR-app” за помощь в разработке и дальнейшего поддерживания нашего проекта.</div>
+                    <div class="reviews__text"> Благодарим сотрудников из студии "VP-app"</div>
                   </div>
                 </div>
                 <div class="reviews-sl__slide">
                   <div class="reviews">
                     <div class="reviews__header">
                       <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-2.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-2.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="reviews__author">Измайлов В.О</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
@@ -476,7 +507,7 @@
                   <div class="reviews">
                     <div class="reviews__header">
                       <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-3.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-3.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="reviews__author">Владимир Ткачев</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
@@ -484,53 +515,49 @@
                   </div>
                   <div class="reviews">
                     <div class="reviews__header">
-                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-2.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rev-1.jpg" alt=""></div>
+                      <div class="reviews__loupe"><a class="grouped_elements" href="img/rev-2.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a></div>
                     </div>
-                    <div class="reviews__author">Измайлов В.О</div>
+                    <div class="reviews__author">Мелов А.А</div>
                     <div class="reviews__data">комментарий от 7.11.20.17</div>
-                    <div class="reviews__text"> Проект “FunSpy” и лично Измайлов В.О. благодарят студию по разработке игр виртуальной реальности “VR-app” за помощь в разработке и дальнейшего поддерживания нашего проекта.</div>
+                    <div class="reviews__text"> Благодарим сотрудников из студии "VP-app"</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="reviews-sl-mobile-wrap">
-              <div class="reviews-sl-mobile">
-                <div class="reviews-sl__slide-m">
-                  <div class="reviews">
-                    <div class="reviews__header">
-                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="reviews__author">Анастасия Сокол</div>
-                    <div class="reviews__data">комментарий от 7.11.20.17</div>
-                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
-                  </div>
-                </div>
-                <div class="reviews-sl__slide-m">
-                  <div class="reviews">
-                    <div class="reviews__header">
-                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="reviews__author">Анастасия Сокол</div>
-                    <div class="reviews__data">комментарий от 7.11.20.17</div>
-                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
-                  </div>
-                </div>
-                <div class="reviews-sl__slide-m">
-                  <div class="reviews">
-                    <div class="reviews__header">
-                      <div class="reviews__img-wrap"><img class="reviews__img" src="img/rewies-screen.jpg" alt=""></div>
-                      <div class="reviews__loupe"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="reviews__author">Анастасия Сокол</div>
-                    <div class="reviews__data">комментарий от 7.11.20.17</div>
-                    <div class="reviews__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!--.reviews-sl-mobile-wrap
+            .reviews-sl-mobile
+            	.reviews-sl__slide-m
+            			.reviews
+            				.reviews__header
+            					.reviews__img-wrap
+            						img(src="img/rewies-screen.jpg", alt="").reviews__img
+            					.reviews__loupe
+            							<i class="fa fa-search-plus" aria-hidden="true"></i>
+            				.reviews__author Анастасия Сокол
+            				.reviews__data комментарий от 7.11.20.17
+            				.reviews__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui
+            	.reviews-sl__slide-m
+            			.reviews
+            				.reviews__header
+            					.reviews__img-wrap
+            						img(src="img/rewies-screen.jpg", alt="").reviews__img
+            					.reviews__loupe
+            							<i class="fa fa-search-plus" aria-hidden="true"></i>
+            				.reviews__author Анастасия Сокол
+            				.reviews__data комментарий от 7.11.20.17
+            				.reviews__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui
+            	.reviews-sl__slide-m
+            			.reviews
+            				.reviews__header
+            					.reviews__img-wrap
+            						img(src="img/rewies-screen.jpg", alt="").reviews__img
+            					.reviews__loupe
+            							<i class="fa fa-search-plus" aria-hidden="true"></i>
+            				.reviews__author Анастасия Сокол
+            				.reviews__data комментарий от 7.11.20.17
+            				.reviews__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia necessitatibus cupiditate ut neque itaque ullam reiciendis ipsum qui
+            -->
           </div>
         </div>
       </div>
@@ -541,7 +568,26 @@
           <div class="col-md-12">
             <div class="s-title">
               <h3 class="s-title__header">seo <span>text</span></h3>
-              <div class="s-title__sub-text">Над выполнением вашего заказа будут трудиться штатные сотрудники компании. Это опытные маркетологи и проектные менеджеры, модельеры и программисты, художники и аниматоры. Преимущества, которые предлагает «VR Apps» Сотрудничество с ответственным исполнителем, предполагает выгодные условия и огромное количество преимуществ:1 Стоимость услуг компании ниже средней по Москве. Оплата может проходить поэтапно. 2 Перед началом работ подписывается договор. Агентство берёт на себя обязательства, которые юридически понятны и правильно оформлены. 3 Разработчики на связи круглосуточно и ежедневно. В работе никогда не задействуются специалисты со стороны или фрилансеры. 4 Все специалисты слаженно работают над выполнением вашего заказа. Проект будет выглядеть цельным продуктом, и функционировать безупречно. Вы можете задать вопросы менеджеру по телефону или в электронном режиме. Свяжитесь с нами и узнайте стоимость услуг. Если вы сомневаетесь в деталях, наш опытный специалист предложит оптимальный вариант решения вашей задачи.</div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <div class="s-title__sub-text"> 
+                <pre>Над выполнением вашего заказа будут трудиться штатные сотрудники компании. Это опытные
+маркетологи и проектные менеджеры, модельеры и программисты, художники и аниматоры.
+Преимущества, которые предлагает «VR Apps»
+
+Сотрудничество с ответственным исполнителем, предполагает выгодные условия и огромное
+количество преимуществ:
+
+1. Стоимость услуг компании ниже средней по Москве. Оплата может проходить поэтапно.
+2. Перед началом работ подписывается договор. Агентство берёт на себя обязательства,
+которые юридически понятны и правильно оформлены.
+3. Разработчики на связи круглосуточно и ежедневно. В работе никогда не задействуются
+специалисты со стороны или фрилансеры.										
+4. Все специалисты слаженно работают над выполнением вашего заказа. Проект будет
+выглядеть цельным продуктом, и функционировать безупречно.
+
+Вы можете задать вопросы менеджеру по телефону или в электронном режиме. Свяжитесь с нами
+и узнайте стоимость услуг. Если вы сомневаетесь в деталях, наш опытный специалист предложит
+оптимальный вариант решения вашей задачи.</pre>
+              </div><a class="b-seo__link-down" href=""><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -551,8 +597,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="s-title">
-              <h3 class="s-title__header">о <span>компании</span></h3>
+            <div class="s-title"><a href="#">
+                <h3 class="s-title__header">о <span>компании</span></h3></a>
               <div class="s-title__sub-text">Сильнейшая российская команда разработчиков и дизайнеров, объединенная стремлением приблизить будущее и сделать виртуальную реальность доступней для каждого, воплощает смелые мечты с 2014 года и продолжает развивать и развиваться</div>
             </div>
             <div class="sertificate">
@@ -601,7 +647,7 @@
               <h3 class="s-title__header">онлайн <span>заявка</span></h3>
               <form action="#" method="post">
                 <div class="form-online__header">
-                  Заполните форму <br />и мы свяжимся с вами!</div>
+                  Заполните форму <br />и мы свяжемся с вами!</div>
                 <div class="form-online__item-wrap">
                   <div class="form-online__input-item">
                     <label>
@@ -622,10 +668,10 @@
                 <div class="form-online__budget budget">
                   <div class="budget__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет	</div>
                   <div class="budget__content">
-                    <div class="budget__start">от 21 949 335 <span>руб.</span></div>
-                    <div class="budget__end">от 999 999 999 <span>руб.</span></div>
+                    <div class="budget__start">от 2 949 33 <span>руб.</span></div>
+                    <div class="budget__end">до 2 875 593 <span>руб.</span></div>
                   </div>
-                  <div id="slider-range-online"></div>
+                  <div class="slider-range-online"></div>
                 </div>
                 <div class="form-online__budget-m budget-m">
                   <div class="budget-m__header"><i class="fa fa-rub" aria-hidden="true"></i> Бюджет</div>
@@ -648,7 +694,7 @@
                     <label class="online-checked-wrap" for="online-chk"><i class="fa fa-square-o online-i-ch-1" id="online-checked" aria-hidden="true"></i>
 <i class="fa fa-check online-i-ch-2"  aria-hidden="true"></i>
                     </label><span class="text-checkbox">
-                       Я согласен с <a href="#" target="_blank">условиями оферты</a></span>
+                       Я согласен с <a href="/offert.html" target="_blank">условиями оферты</a></span>
                   </div>
                   <div class="doc-wrap">
                     <label class="online-file"><span class="document"><i class="fa fa-file-text" aria-hidden="true"></i> Прикрепить документ</span>
@@ -670,22 +716,24 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h3 class="s-title__header">наши <span>компитенции</span></h3>
-            <div class="partners owl-carousel">
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
-              <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+            <div class="s-title"><a href="">
+                <h3 class="s-title__header">наши <span>компитенции</span></h3></a>
+              <div class="partners owl-carousel">
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+                <div class="partners__slid-item"><img class="partners__img" src="img/canon.jpg"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="s-footer"><a class="btn-to-top" href="#" id="scroll-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    <div class="s-footer"><a class="btn-to-top" href="#" id="scroll-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
       <div class="container">
         <div class="row">
           <div class="col-xl-1 col-12">
@@ -700,30 +748,22 @@
                 <div class="contacts__content"><a class="contacts__text open_modal d-none d-md-block" href="#vizit-mod"> +7 (499) 380-66-49</a><a class="contacts__link open_modal d-none d-md-block" href="#vizit-mod"> Заказать звонок</a></div>
               </div>
             </div>
-            <div class="social d-md-none"><span class="social__header">Рассказать друзьям:</span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+            <div class="social d-none d-md-block"><span class="social__header">Рассказать друзьям:</span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
           </div>
           <div class="col-xl-5 col-12">
             <div class="social-icon social-icom-m"><a class="social-icon__link" href="https://www.youtube.com/channel/UC7G9rSyeQssBLhSDZm2GYRA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><a class="social-icon__link" href="https://www.ok.ru/group/55683203399696"><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a><a class="social-icon__link" href="https://www.instagram.com/vr_app.ru/"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a class="social-icon__link" href="https://www.facebook.com/Vr-appru-210795329723789/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a class="social-icon__link" href="https://vk.com/public166717105"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a><a class="social-icon__link" href="https://ru.pinterest.com/4a81f1ff536d7ecb88b37ca1eb6f74/"><i class="fa fa-pinterest" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-google" aria-hidden="true"></i></a><a class="social-icon__link" href="https://plus.google.com/u/0/communities/113182981074742345929"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a class="social-icon__link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></div>
             <div class="footer-nav">
-              <div class="footer-nav__item">
-                <div class="footer-nav__header">Виртуальная реальность</div><a class="footer-nav__link" href="#"> Под Oculus Rift</a><a class="footer-nav__link" href="#"> Под Gear VR</a><a class="footer-nav__link" href="#"> Под Htc Vive</a>
-              </div>
-              <div class="footer-nav__item">
-                <div class="footer-nav__header">Решения для бизнеса</div><a class="footer-nav__link" href="#"> Квесты и комнаты</a><a class="footer-nav__link" href="#"> Дизайн интерьера</a><a class="footer-nav__link" href="#"> Аттракционы</a><a class="footer-nav__link" href="#"> Тренажеры</a>
-              </div>
-              <div class="footer-nav__item">
-                <div class="footer-nav__header">Услуги</div><a class="footer-nav__link" href="#"> Разработка приложений</a><a class="footer-nav__link" href="#"> Разработка 3D контента</a><a class="footer-nav__link" href="#"> Разработка игр</a><a class="footer-nav__link" href="#"> Видео 360</a>
-              </div>
-              <div class="footer-nav__item">
-                <div class="footer-nav__header">О компании</div><a class="footer-nav__link" href="#"> Отзывы и награды</a><a class="footer-nav__link" href="#"> Наша команда</a><a class="footer-nav__link" href="#"> Портфолио</a><a class="footer-nav__link" href="#"> Контакты</a><a class="footer-nav__link" href="#"> Вакансии</a><a class="footer-nav__link" href="#"> Цены</a><a class="footer-nav__link" href="#"> Блог</a>
-              </div>
+              <div class="footer-nav__item"><a class="footer-nav__header" href="">Виртуальная реальность</a><a class="footer-nav__link" href="#"> Под Oculus Rift</a><a class="footer-nav__link" href="#"> Под Gear VR</a><a class="footer-nav__link" href="#"> Под Htc Vive</a></div>
+              <div class="footer-nav__item"><a class="footer-nav__header" href="">Решения для бизнеса</a><a class="footer-nav__link" href="#"> Квесты и комнаты</a><a class="footer-nav__link" href="#"> Дизайн интерьера</a><a class="footer-nav__link" href="#"> Аттракционы</a><a class="footer-nav__link" href="#"> Тренажеры</a></div>
+              <div class="footer-nav__item"><a class="footer-nav__header" href="">Услуги</a><a class="footer-nav__link" href="#"> Разработка приложений</a><a class="footer-nav__link" href="#"> Разработка 3D контента</a><a class="footer-nav__link" href="#"> Разработка игр</a><a class="footer-nav__link" href="#"> Видео 360</a></div>
+              <div class="footer-nav__item"><a class="footer-nav__header" href="">О компании</a><a class="footer-nav__link" href="#"> Отзывы и награды</a><a class="footer-nav__link" href="#"> Наша команда</a><a class="footer-nav__link" href="#"> Портфолио</a><a class="footer-nav__link" href="#"> Контакты</a><a class="footer-nav__link" href="#"> Вакансии</a><a class="footer-nav__link" href="#"> Цены</a><a class="footer-nav__link" href="#"> Блог</a></div>
             </div>
           </div>
           <div class="col-xl-2 col-md-12">
             <div class="download">
               <div class="download__header">материалы для скачивания</div>
-              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="../brif-VR-App.docx" download>Типовой договор</a></div>
-              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="../dogovo-VR-app.docx" download>Бриф</a></div>
+              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="../dogovo-VR-app.docx" download>Типовой договор</a></div>
+              <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="../brif-VR-App.docx" download>Бриф</a></div>
               <div class="download__item"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> <a class="download__link" href="">PDF Презентация</a></div>
             </div>
             <div class="social social-m d-sm-none d-inline-flex"><span class="social__header">Рассказать друзьям:</span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
@@ -747,7 +787,7 @@
             <div class="form-online">
               <form action="#" method="post">
                 <div class="form-online__header">
-                  Заполните форму <br />и мы вяжимся с вами</div>
+                  Заполните форму <br />и мы свяжемся с вами!</div>
                 <div class="form-online__item-wrap">
                   <div class="form-online__input-item">
                     <label>
@@ -776,7 +816,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </body>
