@@ -52,7 +52,7 @@ $(function(){
               $('.file-name').append(deleteFile);
             }
 
-});
+          });
         $('.deleteF').click(function(e){
           $(this).closest('.file-name').remove();
         });
@@ -62,7 +62,7 @@ $(function(){
          range: true,
          min: 10000,
          max: 5000100,
-         values: [ 219493,   2875593 ],
+         values: [ 219493,   5000100 ],
          slide: function( event, ui ) {
           $( ".budget__start" ).html( "ОТ" + " " + ui.values[0].toLocaleString() + '<span> руб </span>' );
           if( ui.values[1] > 5000000 ){
@@ -98,6 +98,18 @@ $(function(){
          autoplaySpeed: 15000,
          draggable:false,
        });
+        $('.price-slider').slick({
+         infinite: true,
+         dots:false,
+         arrows:false,
+         autoplay:true,
+         fade: true,
+         autoplaySpeed: 6000,
+         draggable:false,
+         pauseOnFocus: false,
+         pauseOnHover : false,
+       });
+
         $('#scroll-to-top').click(function () {
          $('body,html').animate({
           scrollTop: 0
@@ -261,45 +273,7 @@ $(function(){
         	},
         	]
         });
-        (function(){
-          var typed = new Typed(".elements",
-          {
-            stringsElement: '.typedElem',
-            smartBackspace: true,
-            showCursor: false,
-            typeSpeed: 50,
-            backspeed: 30,
-            loop:true,
-            loopCount: Infinity,
-            backDelay: 7000,
-
-
-          });
-        })();
-        (function(){
-          var typed = new Typed(".elements-2",
-          {
-            stringsElement: '.typedElem-2',
-            smartBackspace: true,
-            showCursor: false,
-            typeSpeed: 20,
-            backDelay: 7000,
-            loop:true,
-            loopCount: Infinity,
-
-          });
-        })();
-        (function(){
-          var typed = new Typed(".elements-3",
-          {
-            stringsElement: '.typedElem-3',
-            smartBackspace: true,
-            showCursor: false,
-            typeSpeed: 20,
-            backDelay: 7000,
-            loop:true,
-            loopCount: Infinity,
-          });
-        })();
+        
+        
 
       });

@@ -170,14 +170,15 @@ body {
 .hero-m-decor-burn {
   position: absolute;
   z-index: -2;
-  bottom: -200px;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-  -webkit-transform: rotateY(190deg);
-          transform: rotateY(190deg); }
+  bottom: -400px; }
   @media (max-width: 1199px) {
     .hero-m-decor-burn {
-      right: -70px; } }
+      right: -70px;
+      bottom: -200px;
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+      -webkit-transform: rotateY(190deg);
+              transform: rotateY(190deg); } }
   @media (max-width: 767px) {
     .hero-m-decor-burn {
       display: none; } }
@@ -820,7 +821,8 @@ input:focus, textarea:focus, img:focus {
     color: #6699FF;
     text-transform: uppercase;
     font-family: "Exo2-Bold";
-    font-size: 28px; }
+    font-size: 28px;
+    display: inline-block; }
     .s-title__header span {
       color: #fff; }
   .s-title__sub-text {
@@ -830,6 +832,8 @@ input:focus, textarea:focus, img:focus {
     min-height: 95px;
     margin-bottom: 15px;
     color: #d9d9d9; }
+    .s-title__sub-text pre {
+      font-family: "Exo2-Regular"; }
   .s-title a {
     text-decoration: none; }
 
@@ -867,7 +871,9 @@ input:focus, textarea:focus, img:focus {
     font-family: "Exo2-Bold";
     display: inline-block;
     border-bottom: 1px solid #fff;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    color: #fff;
+    text-decoration: none; }
   .service .fa {
     color: #8EC41F; }
   .service__icon-main {
@@ -888,10 +894,11 @@ input:focus, textarea:focus, img:focus {
     .service__item .fa {
       width: 25px;
       text-align: center; }
-    .service__item span {
+    .service__item a {
       text-decoration: underline;
       text-underline-position: under;
-      margin-left: 10px; }
+      margin-left: 10px;
+      color: #cccccc; }
   .service__icon {
     font-size: 21px;
     margin-top: 3px; }
@@ -930,9 +937,9 @@ input:focus, textarea:focus, img:focus {
     height: 100%;
     background-color: #333;
     width: 100%;
-    -webkit-transform: skewY(-11deg);
-        -ms-transform: skewY(-11deg);
-            transform: skewY(-11deg);
+    -webkit-transform: skewY(-12deg);
+        -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
     left: 0;
     display: block;
     background-image: -webkit-gradient(linear, left top, right top, from(#24262e), to(#303137));
@@ -1530,7 +1537,7 @@ input:focus, textarea:focus, img:focus {
   position: relative;
   background: url(../img/otzuvu.png);
   background-repeat: no-repeat;
-  background-position: right -31px;
+  background-position: bottom center;
   margin-top: -105px;
   padding-bottom: 140px; }
   @media (max-width: 1199px) {
@@ -1727,9 +1734,9 @@ input:focus, textarea:focus, img:focus {
     content: " ";
     height: 672px;
     width: 100%;
-    -webkit-transform: skewY(-11deg);
-        -ms-transform: skewY(-11deg);
-            transform: skewY(-11deg);
+    -webkit-transform: skewY(-12deg);
+        -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
     left: 0;
     display: block;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#24262e), to(#303137));
@@ -2049,7 +2056,8 @@ input:focus, textarea:focus, img:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-transform: uppercase;
-    font-family: "roboto-bold"; }
+    font-family: "roboto-bold";
+    font-size: 14px; }
     .budget__content span {
       color: #8EC41F; }
   .budget .fa {
@@ -2133,6 +2141,7 @@ input:focus, textarea:focus, img:focus {
             transform: translateY(-35%);
     position: absolute;
     background: url(../img/onl-slid-btn-1.png);
+    background-repeat: no-repeat !important;
     outline: none;
     border: none; }
     .slider-range-online .ui-slider-handle.ui-state-default.ui-corner-all:focus {
@@ -2153,7 +2162,7 @@ input:focus, textarea:focus, img:focus {
 .online-file:hover {
   cursor: pointer; }
 
-.s-partners .s-title__header {
+.s-partners .s-title {
   text-align: center; }
 
 .s-partners .slick-slider button {
@@ -2458,6 +2467,7 @@ input:focus, textarea:focus, img:focus {
     font-family: "roboto-regular";
     font-size: 12px;
     margin-right: 50px;
+    text-decoration: none;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
