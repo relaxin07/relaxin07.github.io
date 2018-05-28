@@ -57,12 +57,6 @@ body {
         float: right; } }
     @media (max-width: 1199px) {
       .header .contacts {
-        margin-top: 20px;
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around; } }
-    @media (max-width: 1199px) {
-      .header .contacts {
         margin-top: 0;
         display: -webkit-box;
         display: -webkit-flex;
@@ -79,8 +73,8 @@ body {
       .header .contacts__item {
         margin: 0; } }
     @media (max-width: 1199px) {
-      .header .contacts__img i {
-        font-size: 36px; } }
+      .header .contacts__img .fa {
+        font-size: 30px; } }
 
 .nav {
   display: inline-block;
