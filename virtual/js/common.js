@@ -83,7 +83,8 @@ $(function(){
           'overlayShow' : false
         });
 
-        $(".slider-range-online ").find('.ui-slider-handle:eq(-1)').css("background", "url('img/onl-slid-btn-2.png')");
+        $(".slider-range-online ").find('.ui-slider-handle:eq(-1)').css("background", "url('./img/onl-slid-btn-2.png')");
+
         $(".hamburger").click(function(){
          $(this).toggleClass("is-active");
          $('.nav').slideToggle("slow", function(){
