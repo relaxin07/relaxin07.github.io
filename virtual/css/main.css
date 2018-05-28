@@ -741,7 +741,8 @@ input:focus, textarea:focus, img:focus {
     color: #373636;
     margin: 10px 0 0 0;
     font-family: "Exo2-Bold";
-    padding: 0 15px 0 20px; }
+    padding: 0 15px 0 20px;
+    min-height: 85px; }
   .portfolio__data {
     margin-top: 16px;
     padding: 0 22px 0 35px;
@@ -954,6 +955,10 @@ input:focus, textarea:focus, img:focus {
     @media (max-width: 1199px) {
       .b-seo__link-down {
         display: block; } }
+  .b-seo .seo-pre {
+    white-space: pre-wrap;
+    max-width: 100%;
+    overflow: hidden; }
 
 .b-seo__link-down .fa {
   font-size: 48px;
@@ -2140,12 +2145,14 @@ input:focus, textarea:focus, img:focus {
         -ms-transform: translateY(-35%);
             transform: translateY(-35%);
     position: absolute;
-    background: url(../img/onl-slid-btn-1.png);
+    background: url(../img/onl-slid-btn-2.png);
     background-repeat: no-repeat !important;
     outline: none;
     border: none; }
     .slider-range-online .ui-slider-handle.ui-state-default.ui-corner-all:focus {
       outline: none; }
+    .slider-range-online .ui-slider-handle.ui-state-default.ui-corner-all:nth-child(2n) {
+      background: url(../img/onl-slid-btn-1.png); }
 
 .ui-slider-horizontal .ui-slider-range {
   display: none !important; }
@@ -2225,10 +2232,9 @@ input:focus, textarea:focus, img:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
       .s-footer .contacts {
-        margin-left: 15%;
-        display: none; } }
+        margin-left: 15%; } }
     @media (max-width: 767px) {
       .s-footer .contacts {
         margin-left: 0; } }
@@ -2290,7 +2296,7 @@ input:focus, textarea:focus, img:focus {
         padding-right: 10px; }
       .s-footer .social-icom-m a:nth-child(3n+1) {
         text-align: left;
-        padding-left: 10px; }
+        padding-left: 30px; }
   .s-footer .form-online__header {
     margin-top: 20px; }
   .s-footer .form-online {
@@ -2397,9 +2403,14 @@ input:focus, textarea:focus, img:focus {
   position: absolute;
   right: 0;
   top: 60px; }
-  @media (max-width: 510px) {
+  @media (min-width: 580px) and (max-width: 1199px) {
     .social-icon {
-      position: static; } }
+      top: -90px;
+      right: 0; } }
+  @media (max-width: 580px) {
+    .social-icon {
+      position: static;
+      display: none; } }
   .social-icon__link {
     margin-left: 20px;
     color: #fff;
@@ -2436,6 +2447,39 @@ input:focus, textarea:focus, img:focus {
   height: 33px;
   border-left: 2px solid #fff; }
 
+.footer-bottom-wrap {
+  margin-top: 30px; }
+  @media (max-width: 1199px) {
+    .footer-bottom-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+  @media (max-width: 500px) {
+    .footer-bottom-wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
 .footer-bottom {
   padding: 12px 0;
   margin-top: 10px;
@@ -2443,6 +2487,7 @@ input:focus, textarea:focus, img:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   margin-top: -60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2453,6 +2498,9 @@ input:focus, textarea:focus, img:focus {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 1199px) {
+    .footer-bottom {
+      margin: 0; } }
   .footer-bottom__link {
     color: #fff;
     font-size: 12px;
@@ -2505,6 +2553,19 @@ button:focus {
   @media (max-width: 992px) {
     .btn-to-top {
       display: none; } }
+
+.btn-question {
+  color: #fff;
+  text-align: center;
+  width: 220px;
+  font-family: "roboto-regular";
+  left: 0; }
+  @media (min-width: 1200px) {
+    .btn-question {
+      display: none; } }
+  @media (max-width: 500px) {
+    .btn-question {
+      width: 100%; } }
 
 .s-offert {
   padding: 30px 0; }
