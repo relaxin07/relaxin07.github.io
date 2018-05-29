@@ -566,7 +566,6 @@ input:focus, textarea:focus, img:focus {
     .modal_form {
       position: absolute;
       top: 50px;
-      max-width: 100%;
       width: auto;
       left: 50%; } }
   .modal_form:before {
@@ -887,7 +886,20 @@ input:focus, textarea:focus, img:focus {
   margin-top: 20px; }
   @media (max-width: 767px) {
     .service {
-      margin-top: 35px; } }
+      margin-top: 35px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .service__title {
     font-size: 33px;
     text-transform: uppercase;
@@ -914,6 +926,9 @@ input:focus, textarea:focus, img:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 767px) {
+      .service__item {
+        max-width: 100%; } }
     .service__item .fa {
       width: 25px;
       text-align: center; }
