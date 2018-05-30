@@ -13,8 +13,8 @@ $(function(){
                     $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
                     .css('display', 'block')
                         .animate({opacity: 1, top: '40%'}, 200); // плaвнo пoкaзывaем
-                    });
-        });
+                      });
+          });
 
         close.click( function(){ // лoвим клик пo крестику или oверлэю
             modal // все мoдaльные oкнa
@@ -22,37 +22,38 @@ $(function(){
                     function(){ // пoсле этoгo
                     	$(this).css('display', 'none');
                         overlay.fadeOut(400); // прячем пoдлoжку
-                    }
-                    );
-            });
+                      }
+                      );
+              });
 
         $(".grouped_elements").fancybox({
           openEffect  : 'elastic',
           closeEffect : 'elastic',
 
-      });
+        });
 
 
-
+      
         var state = true;
         $( ".b-seo__link-down" ).on( "click", function(e) {
-            e.preventDefault();
-           
-            $(this).toggleClass("active");
+          e.preventDefault();
+          
+          $(this).toggleClass("active");
 
-            if ( state ) {
-                $( ".seo-pre" ).animate({
-                    height:  '500px'
-              }, 1000 );
+          if ( state ) {
+            $( ".seo-pre" ).animate({
 
-            } else {
-                $( ".seo-pre" ).animate({
+              height:  '100%'
+            }, 1000 );
 
-                  height:  '200px'
-              }, 1000 );
+          } else {
+            $( ".seo-pre" ).animate({
 
-            }
-            state = !state;
+              height:  '200px'
+            }, 1000 );
+
+          }
+          state = !state;
         });
 
 
@@ -70,33 +71,44 @@ $(function(){
               $('.file-name').remove();
               $('.document').append(file_p); 
               $('.file-name').append(deleteFile);
-          }
-          else{
+            }
+            else{
               $('.document').append(file_p); 
               $('.file-name').append(deleteFile);
-          }
+            }
 
-      });
+          });
         $('.deleteF').click(function(e){
           $(this).closest('.file-name').remove();
-      });
+        });
 
+        $('.vr-world-sl').slick({
+          infinite: true,
+          autoplaySpeed: 15000,
+          dots: true,
+          speed: 500,
+          arrows:true,
+          fade: true,
+          prevArrow: '<button id="prev" class="prev prev--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-angle-left" aria-hidden="true"></i> </button>',
+          nextArrow: '<button id="next" class="next next--bgr-none" type="button" class="btn btn-juliet"><i class="fa fa-angle-right" aria-hidden="true"></i></i></button>',
+        });
 
+        
         $(".slider-range-online" ).slider({
-           range: true,
-           min: 10000,
-           max: 5000100,
-           values: [ 219493,   5000100 ],
-           slide: function( event, ui ) {
-              $( ".budget__start" ).html( "ОТ" + " " + ui.values[0].toLocaleString() + '<span> руб </span>' );
-              if( ui.values[1] > 5000000 ){
-                 $( ".budget__end" ).html(  "свыше " + "5 МЛН " + '<span> руб </span>'  );
-             }
-             else{
-
-                 $( ".budget__end" ).html(  "ДО" + " " + ui.values[ 1 ].toLocaleString() + '<span> руб </span>'  );
-             }
+         range: true,
+         min: 10000,
+         max: 5000100,
+         values: [ 219493,   5000100 ],
+         slide: function( event, ui ) {
+          $( ".budget__start" ).html( "ОТ" + " " + ui.values[0].toLocaleString() + '<span> руб </span>' );
+          if( ui.values[1] > 5000000 ){
+           $( ".budget__end" ).html(  "свыше " + "5 МЛН " + '<span> руб </span>'  );
          }
+         else{
+
+           $( ".budget__end" ).html(  "ДО" + " " + ui.values[ 1 ].toLocaleString() + '<span> руб </span>'  );
+         }
+       }
      });
 
         $("a.grouped_elements").fancybox({
@@ -105,41 +117,41 @@ $(function(){
           'speedIn'   : 600, 
           'speedOut'    : 200, 
           'overlayShow' : false
-      });
+        });
 
 //$(".slider-range-online ").find('.ui-slider-handle:eq(-1)').css("background", "url('./img/onl-slid-btn-2.png')");
 
 $(".hamburger").click(function(){
-   $(this).toggleClass("is-active");
-   $('.nav').slideToggle("slow", function(){
-   });
+ $(this).toggleClass("is-active");
+ $('.nav').slideToggle("slow", function(){
+ });
 });
 $('.scroll-b').slick({
-   infinite: true,
-   dots:true,
-   arrows:false,
-   autoplay:true,
-   fade: true,
-   autoplaySpeed: 15000,
-   draggable:false,
+ infinite: true,
+ dots:true,
+ arrows:false,
+ autoplay:true,
+ fade: true,
+ autoplaySpeed: 15000,
+ draggable:false,
 });
 $('.price-slider').slick({
-   infinite: true,
-   dots:false,
-   arrows:false,
-   autoplay:true,
-   fade: true,
-   autoplaySpeed: 6000,
-   draggable:false,
-   pauseOnFocus: false,
-   pauseOnHover : false,
+ infinite: true,
+ dots:false,
+ arrows:false,
+ autoplay:true,
+ fade: true,
+ autoplaySpeed: 6000,
+ draggable:false,
+ pauseOnFocus: false,
+ pauseOnHover : false,
 });
 
 $('#scroll-to-top').click(function () {
-   $('body,html').animate({
-      scrollTop: 0
-  }, 400);
-   return false;
+ $('body,html').animate({
+  scrollTop: 0
+}, 400);
+ return false;
 });
 
         /*$('.portfolio-sl').slick({
@@ -301,4 +313,4 @@ $('#scroll-to-top').click(function () {
         
         
 
-    });
+      });
