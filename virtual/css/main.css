@@ -571,8 +571,11 @@ input:focus, textarea:focus, img:focus {
     .modal_form {
       position: absolute;
       top: 50px;
-      width: auto;
-      left: 50%; } }
+      padding: 10px 50px;
+      width: auto; } }
+  @media (max-width: 480px) {
+    .modal_form {
+      padding: 10px 30px; } }
   .modal_form:before {
     background: url(../img/zyavka-on.jpg) center center;
     opacity: 0.51;
@@ -611,10 +614,14 @@ input:focus, textarea:focus, img:focus {
   .modal_form .modal_close .fa {
     font-size: 36px;
     text-shadow: 0 0 5px #01c0dd, 0 0 10px #01c0dd, 0 0 15px #01c0dd, 0 0 20px #01c0dd; }
+  @media (max-width: 480px) {
+    .modal_form .modal_close {
+      top: 0px;
+      right: 10px; } }
 
 /* Пoдлoжкa */
 #overlay {
-  z-index: 99999;
+  z-index: 99;
   /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
   position: fixed;
   /* всегдa перекрывaет весь сaйт */
@@ -2147,6 +2154,9 @@ input:focus, textarea:focus, img:focus {
     @media (max-width: 767px) {
       .budget__line {
         display: none; } }
+
+.budget__val-start, .budget__val-end {
+  background: transparent; }
 
 .btn-form-online {
   -webkit-border-radius: 20px;
