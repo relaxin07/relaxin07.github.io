@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Тест Таск</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">    
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+<body> 
+  <div class="wrapper">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Каталог товаров</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__link">Воздушные шары</span></li>
+      </ul>
+      <h1 class="h1">Каталог Шариков</h1>
+      <div class="filter-wrap">
+        <div class="filter-wrap__item colors"><span class="colors__text">Цвет:</span>
+          <div class="colors__items">
+            <div class="colors__item">
+              <input type="radio" name="color" id="red">
+              <label for="red"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="black">
+              <label for="black"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="yellow">
+              <label for="yellow"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="white">
+              <label for="white"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="green">
+              <label for="green"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="pink">
+              <label for="pink"></label>
+            </div>
+            <div class="colors__item">
+              <input type="radio" name="color" id="brown">
+              <label for="brown"></label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-wrap__item checkbox">
+          <div class="checkbox__item">
+            <input type="checkbox" id="all-prod" name="checkbox-prod">
+            <label for="all-prod"> <span>Все шары </span></label>
+          </div>
+          <div class="checkbox__item">
+            <input type="checkbox" id="set" name="checkbox-prod">
+            <label for="set"> <span>Комплекты </span></label>
+          </div>
+          <div class="checkbox__item">
+            <input type="checkbox" id="one-prod" name="checkbox-prod">
+            <label for="one-prod"><span> По одному </span></label>
+          </div>
+        </div>
+        <div class="filter-wrap__item sort">
+          <div class="sort__text">Сортировать по <a class="sort__link" href="#">Цене</a><i class="fas fa-long-arrow-alt-up sort__arrow-active sort__up-arrow"></i>
+            <i class="fas fa-long-arrow-alt-down sort__down-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-1.jpg" alt=""></div>
+          <div class="product__name">Шары «Звезды»</div>
+          <div class="product__text">Фигуры , Фигуры, латексный, полупрозрачный, средний, красный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="1 шт.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">11 75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры, латексный, полупрозрачный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__header"><img src="/img/shar-2.jpg" alt=""></div>
+          <div class="product__name">Шары </div>
+          <div class="product__text">Фигуры , латексный</div>
+          <div class="price">
+            <div class="price__new">75 P  <span>/ шт.</span></div>
+            <div class="price__old">90 Р</div>
+          </div>
+          <div class="product__count">
+            <input type="text" value="200 шп.">
+            <div class="counter"><i class="fas fa-plus counter__plus"></i>
+              <i class="fas fa-minus counter__minus"></i>
+            </div><a class="order" href=""><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pagination__item"><i class="fas fa-chevron-left"></i><a href="">Назад</a></div>
+        <div class="pagination__links"><a class="pagination__link" href="">1</a><a class="pagination__link" href="">2</a><span class="pagination__link">3</span><span class="pagination__link">...</span><a class="pagination__link" href="">5</a><a class="pagination__link" href="">6</a></div>
+        <div class="pagination__item"><a href="">Далее </a><i class="fas fa-chevron-right"></i></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
