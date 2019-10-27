@@ -104,7 +104,7 @@ window.onload = function() {
 				}
 			})
 		}
-		addRow(){ 	// Добавляем ряд
+		addRow(){ 	 // Добавляем ряд
 			this.btnAddRow.addEventListener('click' , ()=>{
 				this.wrapper.appendChild(this.allRow[0].cloneNode(true));
 				this.allRow = document.querySelectorAll('.cube__row');
