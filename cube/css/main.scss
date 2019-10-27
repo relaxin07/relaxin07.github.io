@@ -1,0 +1,84 @@
+$boxColor: #48AAE6;
+$boxAddColor: #F3A500;
+$boxRemoveColor: #B20000;
+
+.cube{
+	padding:1px;
+	border:1px solid  #48AAE6;
+	display: inline-block;
+	margin:100px;
+	position: relative;
+	&__item{
+		width: 70px;
+		height: 70px;
+		background-color: $boxColor;
+		border:1px solid #fff;
+		box-sizing: content-box;
+	}
+	&__row{
+		display: flex;
+		position: relative;
+	}
+	&__add{
+		background-color:#F3A500;
+		width: 70px;
+		height: 70px;
+		border:1px solid #fff;
+		position: absolute;
+		color:#fff;
+		display: flex;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover{
+			background-color: #F6C052;
+			transition: all 0.3s ease;
+			
+		}
+		& span {
+			margin: auto;
+			font-size: 10px;
+		}
+		&-item{
+			right:-72px;
+		}
+		&-row{
+			bottom:-72px;
+		}
+
+	}
+	&__remove{
+		background-color : $boxRemoveColor ;
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		color:#fff;
+		display: flex;
+		border:1px solid transparent;
+		display: none;
+		transition: all 0.3s ease;
+		&:hover{
+			background-color: #CA4C49;
+			cursor: pointer;
+			transition: all 3s ease;
+		}
+		& span {
+			margin: auto;
+			font-size: 10px;
+		}
+		
+		&-item{
+			top:-71px;
+			&.active{
+				display: flex;
+			}
+			
+		}
+		&-row{
+			left:-71px;
+			&.active{
+				display: flex;
+			}
+			
+		}
+	}
+}

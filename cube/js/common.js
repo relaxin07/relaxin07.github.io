@@ -1,162 +1,154 @@
 window.onload = function() {
-	let wrapper = document.querySelector('.cube');
-	function createCube(params1  , params2){ 					//отрисовываем айтемы для куба.
-		let rowsNumber = params1;
-		let itemNumber = params2;
-
-		let removeBtnLeft = document.createElement('div'); 		// кнопка удаления слева
-		removeBtnLeft.classList.add('cube__remove' , 'cube__remove-row');
-		removeBtnLeft.innerHTML = " <span> <i class=\"fas fa-minus\"></i> </span>";
-		wrapper.appendChild(removeBtnLeft);
-
-		let removeBtnBottom = document.createElement('div'); 	// кнопка удаления сверху
-		removeBtnBottom.classList.add('cube__remove' , 'cube__remove-item');
-		removeBtnBottom.innerHTML = " <span> <i class=\"fas fa-minus\"></i> </span>";
-		wrapper.appendChild(removeBtnBottom);
-
-		let addBtnRight = document.createElement('div'); 		// кнопка добавления справа
-		addBtnRight.classList.add('cube__add' , 'cube__add-item');
-		addBtnRight.innerHTML = " <span> <i class=\"fas fa-plus\"></i> </span>";
-		wrapper.appendChild(addBtnRight);
-
-		let addBtnBottom = document.createElement('div');		 // кнопка добавления снизу
-		addBtnBottom.classList.add('cube__add' , 'cube__add-row');
-		addBtnBottom.innerHTML = " <span> <i class=\"fas fa-plus\"></i> </span>";
-		wrapper.appendChild(addBtnBottom);
-		
-		for(let i = 0 ; i < rowsNumber; i++){
-
-			let rowsDiv = document.createElement('div');
-			rowsDiv.classList.add('cube__row');
-			wrapper.appendChild(rowsDiv);
-
-			for(let j = 0 ; j < itemNumber; j++){
-				let itemDiv = document.createElement('div');
-				itemDiv.classList.add('cube__item');
-				rowsDiv.appendChild(itemDiv);
-			} 
-			
+	class myCube{
+		constructor(wrapper){
+			this.wrapper = document.querySelector(wrapper);
+			this.attrRow = null;
+			this.attrItem = null;
+			this.createCube(4,4);
+			this.allColumn = document.querySelectorAll('.cube__item');
+			this.allRow = document.querySelectorAll('.cube__row');
+			this.allBtnRemove = document.querySelectorAll('.cube__remove');
+			this.btnRemoveColumn = document.querySelector('.cube__remove-item');
+			this.btnRemoveRow = document.querySelector('.cube__remove-row');
+			this.btnAddColumn = document.querySelector('.cube__add-item');
+			this.btnAddRow = document.querySelector('.cube__add-row');
+			this.createAttrInDiv();
+			this.coordsRemoveBtn();
+			this.showBtn();
+			this.hiddenBtn();
+			this.addRow();
+			this.addColumn();
+			this.removeColumn();
+			this.removeRow();
 		}
-	}
-	createCube(4,4);
 
-	function createAttrItem(){ 										// создаем атрибуты для блоков
-		let myItem = document.querySelectorAll('.cube__row');
-		myItem.forEach(function(rowItem , i){
-			rowItem.setAttribute('data-number', i);
-			let childItem = rowItem.childNodes;
-			childItem.forEach(function(childList,j){
-				childList.setAttribute('data-number',j);
-			})
-
-		})
-	}
-	createAttrItem();
-
-	function removeBtn(){											// скрываем кнопки удаления .
-		let allBtn =  document.querySelectorAll('.cube__remove ');
-		allBtn.forEach(function(allBtnItem){
-			allBtnItem.classList.remove('active')
-		})
-	}
-
-	function hoverBtn(){
-		let boxItem = document.querySelectorAll('.cube__item');
-		boxItem.forEach(function(item){
-			item.addEventListener('mouseover', function(){       	//записываем атрибут в кнопку удаления по наведению на блок
-				let itemAttr = item.getAttribute('data-number'); 	// по атрибутам будем удалять ряд и стобик.
-				let removeTop = document.querySelector('.cube__remove-item');
-				let allRow = document.querySelectorAll('.cube__row');
-				removeTop.setAttribute('data-number' , itemAttr );
-				allRow.forEach(function(allRowItem){           		
-					if(allRowItem.childNodes.length > 1){			//  скрываем кнопку если меньше 1 ряда.
-						removeTop.classList.add('active');
-					}
-					else{
-						removeTop.classList.remove('active');
-					}
+		createElement(name  , classes , innerHtml = null , parents){  //Функция для создания элемента
+			this.element = document.createElement(name);
+			this.classAll = classes;
+			this.wrapBlock = document.querySelectorAll(parents);
+			if(typeof this.classAll === 'object'){
+				for(let i = 0 ; i < this.classAll.length ; i++){
+					this.element.classList.add(this.classAll[i]);
+				}
+			}
+			else{
+				this.element.classList.add(this.classAll);
+			}
+			this.element.innerHTML = innerHtml;
+			for(let i = 0; i < this.wrapBlock.length; i++){
+				this.wrapBlock[i].appendChild(this.element);
+			}	
+		}
+		createCube(rows , cols){ 	// Отрисовываем куб
+			this.createElement('div',['cube__remove','cube__remove-row'] ,"<span> <i class=\"fas fa-minus\"></i> </span>" , '.cube' );
+			this.createElement('div',['cube__remove', 'cube__remove-item'] ,"<span> <i class=\"fas fa-minus\"></i> </span>" , '.cube' );
+			this.createElement('div',['cube__add', 'cube__add-item'] ,"<span> <i class=\"fas fa-plus\"></i> </span>" ,'.cube');
+			this.createElement('div',['cube__add', 'cube__add-row'] ,"<span> <i class=\"fas fa-plus\"></i> </span>",'.cube' );
+			this.colsNumber = cols;
+			this.rowsNumber = rows;
+			for(let i = 0 ; i < this.colsNumber ; i++ ){
+				this.createElement('div', 'cube__row',null,'.cube');
+				for(let j = 0; j < this.rowsNumber ; j++){
+					this.createElement('div', 'cube__item',null,'.cube__row');
+				}
+			}
+		}
+		createAttrInDiv(){ 	// Создаем атрибуты
+			this.allRow.forEach(function(rowItem , i){
+				rowItem.setAttribute('data-number', i);
+				rowItem.childNodes.forEach(function(childList,j){
+					childList.setAttribute('data-number',j);
 				})
-				
-				removeTop.style.left =  2+ (itemAttr * 71) + (itemAttr * 1) +'px';  // данные css для кнопки удаления столбцов.
-				let rowAttr = this.parentNode.getAttribute('data-number');
-				
-				let removeLeft = document.querySelector('.cube__remove-row');
-				if(allRow.length > 1){ 									//  скрываем кнопку если меньше 1 ряда.
-					removeLeft.classList.add('active');
+			})
+		}
+		attrRowAndCol(){  // Определяем атрибуты для кнопок удлаения
+			this.wrapper.addEventListener('mouseover',(e) =>{
+				if(e.target.classList.contains('cube__item')){
+					this.attrItem = e.target.getAttribute('data-number');
+					this.attrRow  = e.target.parentElement.getAttribute('data-number');
+					this.btnRemoveColumn.setAttribute('data-number',this.attrItem);
+					this.btnRemoveRow.setAttribute('data-number',this.attrRow);
+				}
+			})
+		}
+		coordsRemoveBtn(){ // координаты для кнопок удаления
+			this.wrapper.addEventListener('mouseover',(e) =>{
+				if(e.target.classList.contains('cube__item')){
+					this.btnRemoveRow.style.top =  1 + e.target.parentElement.offsetTop + 'px';
+					this.btnRemoveColumn.style.left = 2 + e.target.offsetLeft + 'px';
+				}
+			})
+		}
+		hiddenBtn(){	//прячем кнопки
+			this.wrapper.addEventListener('mouseout',() =>{
+				for(let i = 0; i < this.allBtnRemove.length; i++){
+					this.allBtnRemove[i].classList.remove('active');
+				}
+			})
+		}
+		showBtn(){ // показываем кнопки
+			this.wrapper.addEventListener('mouseover',(e) =>{
+				this.attrRowAndCol();
+				if(e.target.classList.contains('cube__add') || e.target.closest('.cube__add')){
+					e.stopPropagation();
 				}
 				else{
-					removeLeft.classList.remove('active');
+					this.allRow.forEach( (item , i) =>{
+						if(item.childNodes.length > 1){
+							this.btnRemoveColumn.classList.add('active');
+						}
+						if(this.allRow.length > 1){
+							this.btnRemoveRow.classList.add('active');
+						}
+					})
 				}
-				removeLeft.setAttribute('data-number', rowAttr);
-				removeLeft.style.top =  2+ (rowAttr * 71) + (rowAttr * 1) +'px'; // данные css для кнопки удаления рядов.
+			})
+		}
+		addRow(){ 	// Добавляем ряд
+			this.btnAddRow.addEventListener('click' , ()=>{
+				this.wrapper.appendChild(this.allRow[0].cloneNode(true));
+				this.allRow = document.querySelectorAll('.cube__row');
+				this.allColumn = document.querySelectorAll('.cube__item');
+				this.createAttrInDiv();
+			})
+		}
+		addColumn(){	// Добавляем колонку
+			this.btnAddColumn.addEventListener('click' , ()=>{
+				this.allRow.forEach((item,i)=>{
+					item.appendChild(this.allColumn[0].cloneNode(true));
+				})
+				this.allRow = document.querySelectorAll('.cube__row');
+				this.allColumn = document.querySelectorAll('.cube__item');
+				this.createAttrInDiv();
+			})
+
+		}
+		removeColumn(){	// Удаляем колонку
+			this.btnRemoveColumn.addEventListener('click', (e)=>{
+				this.btnRemoveColumn.classList.remove('active');
+				this.allColumn.forEach( (item) =>{
+					if(this.btnRemoveColumn.getAttribute('data-number') == item.getAttribute('data-number') ){
+						item.remove();
+					}
+				},true);
+				this.createAttrInDiv();
+				this.allRow = document.querySelectorAll('.cube__row');
+				this.allColumn = document.querySelectorAll('.cube__item');
 			})
 			
-		})
-	}
-	hoverBtn();
-
-	function outMouse(){    //функция для скрытия кнопок
-		wrapper.addEventListener('mouseleave',function(e){
-			removeBtn();
-		})
-	}
-	outMouse();
-
-	let removeRow = document.querySelectorAll('.cube__remove-row');		// удаление строки и колонки
-
-	removeRow.forEach(function(item ){
-		item.addEventListener('click' , function(){
-			this.classList.remove('active');
-			rowAttr = this.getAttribute('data-number');
-			let allRow = document.querySelectorAll('.cube__row');
-			allRow.forEach(function(itemRow , i){
-				if(rowAttr == itemRow.getAttribute('data-number')){
-					itemRow.remove();
-				}
+		}
+		removeRow(){ // Удаляем ряд
+			this.btnRemoveRow.addEventListener('click', (e)=>{
+				this.btnRemoveRow.classList.remove('active');
+				this.allRow.forEach( (item) =>{
+					if(this.btnRemoveRow.getAttribute('data-number') == item.getAttribute('data-number') ){
+						item.remove();
+					}
+				},true);
+				this.createAttrInDiv();
+				this.allRow = document.querySelectorAll('.cube__row');
 			})
-			createAttrItem();
-			hoverBtn();
-		})
-	})
-
-	let removeItem = document.querySelectorAll('.cube__remove-item');
-
-	removeItem.forEach(function(item){
-		item.addEventListener('click' , function(){
-			this.classList.remove('active');
-			let removeAttribute = this.getAttribute('data-number');
-			let allDiv = document.querySelectorAll('.cube__item');
-			allDiv.forEach(function(itemDiv){
-				if(itemDiv.getAttribute('data-number') == removeAttribute  ){
-					itemDiv.remove();
-				}
-			})
-			createAttrItem();
-			hoverBtn();
-
-		})
-	})
-
-	let addRow = document.querySelectorAll('.cube__add-row'); 			//Добавление строки и колонки 
-	addRow.forEach(function(item){	
-		item.addEventListener('click' , function(){
-			let newRow = document.querySelector('.cube__row').cloneNode(true);
-			wrapper.appendChild(newRow);
-			createAttrItem();
-			hoverBtn();
-		})
-	})
-
-	let addItem = document.querySelector('.cube__add-item');			
-	addItem.addEventListener('click', function(){
-		let myRow = document.querySelectorAll('.cube__row');
-		myRow.forEach(function(thisRow,i){
-			let myItem = document.querySelector('.cube__item').cloneNode(true);
-			thisRow.appendChild(myItem);
-			createAttrItem();
-			hoverBtn();
-		})
-
-	})
-
+		}
+	}
+	let cube = new myCube('.cube');
 }
