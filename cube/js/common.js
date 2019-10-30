@@ -20,7 +20,6 @@ class MyCube{
 		}
 		this.marginTopCols = parseInt(getComputedStyle(this.allCols[0],true).marginTop);
 		this.paddingWrapper = parseInt(getComputedStyle(this.wrapper,true).paddingLeft);
-
 		this.createAttrInRowsAndCols();
 		this.wrapper.addEventListener('mouseover', this.showBtn.bind(this));
 		this.wrapper.addEventListener('mouseover', this.setAttrInBtnRemoveColsRow.bind(this));
