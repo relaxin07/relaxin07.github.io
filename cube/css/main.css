@@ -3,97 +3,85 @@
   border: 1px solid  #48AAE6;
   display: inline-block;
   margin: 100px;
-  position: relative; 
-}
-.cube__item {
-  width: 70px;
-  height: 70px;
-  background-color: #48AAE6;
-  border: 1px solid #fff;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; 
-}
-.cube__row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative; 
-}
-.cube__add {
-  background-color: #F3A500;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #fff;
-  position: absolute;
-  color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
-}
-.cube__add:hover {
-  background-color: #F6C052;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
-}
-.cube__add span {
-  margin: auto;
-  font-size: 10px; 
-}
-.cube__add-item {
-  right: -72px; 
-}
-.cube__add-row {
-  bottom: -72px; 
-}
-.cube__remove {
-  background-color: #B20000;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid transparent;
-  display: none;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
-}
-.cube__remove:hover {
-  background-color: #CA4C49;
-  cursor: pointer;
-  -webkit-transition: all 3s ease;
-  -o-transition: all 3s ease;
-  transition: all 3s ease; 
-}
-.cube__remove span {
-  margin: auto;
-  font-size: 10px; 
-}
-.cube__remove-item {
-  top: -71px; 
-}
-.cube__remove-item.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; 
-}
-.cube__remove-row {
-  left: -71px; 
-}
-.cube__remove-row.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; 
-}
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .cube__item {
+    width: 70px;
+    height: 70px;
+    background-color: #48AAE6;
+    margin: 1px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
+  .cube__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  .cube__add {
+    background-color: #F3A500;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    position: absolute;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .cube__add:hover {
+      background-color: #F6C052;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .cube__add span {
+      margin: auto;
+      font-size: 22px;
+      font-weight: bold; }
+    .cube__add-item {
+      right: -72px; }
+    .cube__add-row {
+      bottom: -72px; }
+  .cube__remove {
+    background-color: #B20000;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid transparent;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 22px;
+    font-weight: bold; }
+    .cube__remove:hover {
+      background-color: #CA4C49;
+      cursor: pointer; }
+    .cube__remove span {
+      margin: auto;
+      font-size: 22px;
+      font-weight: bold; }
+    .cube__remove-item {
+      top: -71px; }
+      .cube__remove-item.active {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+    .cube__remove-row {
+      left: -71px; }
+      .cube__remove-row.active {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }

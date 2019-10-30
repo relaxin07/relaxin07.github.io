@@ -1,6 +1,5 @@
 $boxColor: #48AAE6;
 $boxAddColor: #F3A500;
-$boxRemoveColor: #B20000;
 
 .cube{
 	padding:1px;
@@ -8,11 +7,12 @@ $boxRemoveColor: #B20000;
 	display: inline-block;
 	margin:100px;
 	position: relative;
+	box-sizing: border-box;
 	&__item{
 		width: 70px;
 		height: 70px;
 		background-color: $boxColor;
-		border:1px solid #fff;
+		margin:1px;
 		box-sizing: content-box;
 	}
 	&__row{
@@ -32,11 +32,11 @@ $boxRemoveColor: #B20000;
 		&:hover{
 			background-color: #F6C052;
 			transition: all 0.3s ease;
-			
 		}
 		& span {
 			margin: auto;
-			font-size: 10px;
+			font-size: 22px;
+			font-weight: bold;
 		}
 		&-item{
 			right:-72px;
@@ -44,10 +44,9 @@ $boxRemoveColor: #B20000;
 		&-row{
 			bottom:-72px;
 		}
-
 	}
 	&__remove{
-		background-color : $boxRemoveColor ;
+		background-color:#B20000 ;
 		width: 70px;
 		height: 70px;
 		position: absolute;
@@ -56,14 +55,16 @@ $boxRemoveColor: #B20000;
 		border:1px solid transparent;
 		display: none;
 		transition: all 0.3s ease;
+		font-size: 22px;
+			font-weight: bold;
 		&:hover{
 			background-color: #CA4C49;
 			cursor: pointer;
-			transition: all 3s ease;
 		}
 		& span {
 			margin: auto;
-			font-size: 10px;
+			font-size: 22px;
+			font-weight: bold;
 		}
 		
 		&-item{
@@ -71,7 +72,6 @@ $boxRemoveColor: #B20000;
 			&.active{
 				display: flex;
 			}
-			
 		}
 		&-row{
 			left:-71px;
