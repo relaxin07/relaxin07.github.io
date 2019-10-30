@@ -1,7 +1,6 @@
 class MyCube{
 	constructor(wrapper , countRows , countCols){
 		this.createCube(wrapper,countRows,countCols);
-		this.myThis = this;
 	}
 	createCube(wrapper ,countRows, countCols){ 	// Отрисовываем куб
 		this.wrapper = document.querySelector(wrapper);
@@ -20,6 +19,7 @@ class MyCube{
 		}
 		this.marginTopCols = parseInt(getComputedStyle(this.allCols[0],true).marginTop);
 		this.paddingWrapper = parseInt(getComputedStyle(this.wrapper,true).paddingLeft);
+
 		this.createAttrInRowsAndCols();
 		this.wrapper.addEventListener('mouseover', this.showBtn.bind(this));
 		this.wrapper.addEventListener('mouseover', this.setAttrInBtnRemoveColsRow.bind(this));
