@@ -1,13 +1,20 @@
 $boxColor: #48AAE6;
 $boxAddColor: #F3A500;
 
+.cube2{
+	padding:1px;
+	border:1px solid  #48AAE6;
+	display: inline-block;
+	margin:100px;
+	position: relative;
+}
+
 .cube{
 	padding:1px;
 	border:1px solid  #48AAE6;
 	display: inline-block;
 	margin:100px;
 	position: relative;
-	box-sizing: border-box;
 	&__item{
 		width: 70px;
 		height: 70px;
@@ -68,13 +75,13 @@ $boxAddColor: #F3A500;
 		}
 		
 		&-item{
-			top:-71px;
+			top:-73px;
 			&.active{
 				display: flex;
 			}
 		}
 		&-row{
-			left:-71px;
+			left:-73px;
 			&.active{
 				display: flex;
 			}
