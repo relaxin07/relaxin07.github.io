@@ -359,6 +359,9 @@ img {
     justify-content: center; 
   } 
 }
+.categories__header {
+  min-height: 120px;
+}
 .categories__item {
   width: 265px;
   text-align: center;
@@ -369,9 +372,11 @@ img {
   font-size: 22px;
   font-family: "Maven-Bold";
   color: #0b2a37; 
+  min-height: 50px;
 }
 .categories__sub-text {
   color: #0b2a37; 
+  margin-top: 10px;
 }
 
 .s-steps__container {
