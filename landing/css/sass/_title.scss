@@ -1,0 +1,15 @@
+.title{
+  &__header{
+    margin: 0;
+    font-size: 36px;
+    color:#0b2a37;
+    text-align: center;
+    font-family: $m-black-font;
+  }
+  &__sub-text{
+    font-size: 18px;
+    font-family: $m-m-font;
+    color:#0b2a37;
+    text-align: center;
+  }
+}

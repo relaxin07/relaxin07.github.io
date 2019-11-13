@@ -1,0 +1,21 @@
+.s-more{
+  padding:40px 0;
+}
+.call-btn-wrap{
+  text-align: center;
+}
+.call-btn{
+  border-radius: 6px;
+  background-color: rgba( 255, 81, 81 , .9 );
+  text-transform: uppercase;
+  padding:14px 18px;
+  display: inline-block;
+  color:#fff;
+  text-decoration: none;
+  font-family: $m-bd-font;
+  margin-top: 36px;
+  transition:all 0.3s ease;
+  &:hover{
+    background-color:lighten(rgba( 255, 81, 81 , .9 ), 5%);
+  }
+}

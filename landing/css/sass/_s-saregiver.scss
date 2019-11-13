@@ -1,0 +1,15 @@
+.s-saregiver{
+  background-color: #EFF7F7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &__text{
+    text-align: center;
+    color:#0b2a37;
+    font-family: $m-m-font;
+    font-size: 18px;
+    & a{
+      color:#8ae2e2;
+      font-family: $m-bd-font;
+    }
+  }
+}

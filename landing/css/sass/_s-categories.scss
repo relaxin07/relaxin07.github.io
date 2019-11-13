@@ -1,0 +1,35 @@
+.s-categoies{
+  padding:90px 0 120px;
+}
+.categories{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap:wrap;
+
+  @media(max-width: 567px){
+    justify-content: center;
+  }
+  &__item{
+    width: 265px;
+    text-align: center;
+    margin-top: 20px;
+    @media(max-width: 1439px){
+      margin:20px 5px 0;
+    }
+  }
+  &__header{
+    min-height: 125px;
+  }
+  &__title{
+    min-height: 50px;
+    margin-top: 35px;
+    font-size: 22px;
+    font-family: $m-bd-font;
+    color:#0b2a37;
+  }
+  &__sub-text{
+    color:#0b2a37;
+    margin-top:10px;
+  }
+}
