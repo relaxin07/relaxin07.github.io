@@ -63,11 +63,12 @@
 }
 
 
-.header__top.sticky{
-  padding: 20px 10px ;
-  position: sticky;
+.header__top-wrapper.fixed{
+  position: fixed;
+  z-index: 9999;
   top:0;
-  background: #fff;
+  width:100%;
+  background: rgba(172, 224, 214, 0.9);
   & .login__link{
     color:#0b2a37;
   }

@@ -1,13 +1,13 @@
 window.onload = function() {
 
-  let headerTop = document.querySelector('.header__top');
+  let headerTop = document.querySelector('.header__top-wrapper');
   
   window.addEventListener('scroll' , () => {
     if(document.documentElement.scrollTop > 0){
-      headerTop.classList.add('sticky');
+      headerTop.classList.add('fixed');
     }
     else{
-      headerTop.classList.remove('sticky');
+      headerTop.classList.remove('fixed');
     }
   })
 
